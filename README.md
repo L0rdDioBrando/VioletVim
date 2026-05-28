@@ -32,9 +32,11 @@ rg
 
 fd
 
+Nerd Fonts (FiraCode in the screenshot)
+
 ---
 
-**🛠️Install**
+## Install:
 
 ---
 
