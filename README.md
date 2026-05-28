@@ -32,7 +32,7 @@ rg,
 
 fd,
 
-Nerd Fonts (FiraCode in the screenshot),
+Nerd Fonts (FiraCode in the screenshot)
 
 ---
 
