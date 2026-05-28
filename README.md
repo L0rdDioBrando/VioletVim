@@ -20,7 +20,7 @@ git,
 
 tree-sitter CLI,
 
-yazi (My config see [here](https://github.com/BurntSushi/ripgrep#installation)),
+yazi (My config see [here]([https://github.com/BurntSushi/ripgrep#installation](https://github.com/L0rdDioBrando/violet-dots/tree/main/nixos/configs/yazi))),
 
 clang *or* gcc,
 
