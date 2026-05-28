@@ -22,7 +22,8 @@ tree-sitter CLI,
 
 yazi (My config see [here](https://github.com/BurntSushi/ripgrep#installation)),
 
-clang *or* gcc,,
+clang *or* gcc,
+
 fzf,
 
 ueberzugpp,
