@@ -38,6 +38,13 @@ Nerd Fonts (FiraCode in the screenshot)
 
 ## Install:
 
+Make backup your configs:
 
+```sh
+mv ~/.config/nvim ~/.config/nvim.back
+```
+Install my dotfiles:
 
-TODO
+```sh
+mkdir ~/.config/nvim && git clone https://github.com/L0rdDioBrando/VioletVim.git ~/.conifg/nvim
+```
