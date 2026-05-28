@@ -46,5 +46,5 @@ mv ~/.config/nvim ~/.config/nvim.back
 Install my dotfiles:
 
 ```sh
-mkdir ~/.config/nvim && git clone https://github.com/L0rdDioBrando/VioletVim.git ~/.conifg/nvim
+git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.conifg/nvim
 ```
