@@ -1,5 +1,4 @@
 # VioletVim
-If you actually like this, then my condolences.
 
 ---
 
