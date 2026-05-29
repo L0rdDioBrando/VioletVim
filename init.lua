@@ -11,7 +11,7 @@ require("plugins.noice")
 require("plugins.aerial")
 require("plugins.dashboard")
 require("plugins.heirline")
---require("plugins.conform") -- Optional
+require("plugins.conform")
 require("plugins.autopairs")
 require("plugins.blink-cmp")
 require("plugins.fzf")
