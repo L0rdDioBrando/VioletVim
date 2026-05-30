@@ -1,6 +1,5 @@
 -- Plugins
 vim.pack.add {
-  "https://github.com/kylechui/nvim-surround",
   "https://github.com/folke/trouble.nvim",
 }
 
@@ -36,6 +35,7 @@ require("plugins.yanky")
 require("plugins.yazi")
 require("plugins.neotest")
 require("plugins.nvim-lint")
+require("plugins.surround")
 
 -- Colorsheme
 vim.cmd('colorscheme catppuccin-macchiato')
