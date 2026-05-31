@@ -1,8 +1,4 @@
 -- Plugins
-vim.pack.add {
-  "https://github.com/folke/trouble.nvim",
-}
-
 require("core.options")
 require("core.colors")
 require("core.keymaps")
@@ -16,13 +12,12 @@ require("plugins.blink-cmp")
 require("plugins.fzf")
 require("plugins.blink-indent")
 require("plugins.notify")
-require("plugins.bufdelete")
 require("plugins.dap")
 require("plugins.gitsigns")
 require("plugins.highlight-colors")
 require("plugins.lazydev")
 require("plugins.lsp-config")
-require("plugins.neo-tree")
+--require("plugins.neo-tree") -- Optional
 require("plugins.luasnip")
 require("plugins.mason-lspconfig")
 require("plugins.mason")
@@ -36,6 +31,5 @@ require("plugins.yazi")
 require("plugins.neotest")
 require("plugins.nvim-lint")
 require("plugins.surround")
-
 -- Colorsheme
 vim.cmd('colorscheme catppuccin-macchiato')
