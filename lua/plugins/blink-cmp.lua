@@ -4,18 +4,16 @@ vim.pack.add {
   "https://github.com/saghen/blink.lib",
   "https://github.com/L3MON4D3/LuaSnip"
 }
-local cmp = require('blink.cmp')
-local opts = {
+require("blink.cmp").setup {
   snippets = { preset = "luasnip" },
   keymap = {
-    preset = "default",
+    preset = "enter",
+    ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
     ["<CR>"] = { "accept", "fallback" },
     ["<Tab>"] = { "select_next", "fallback" },
     ["<S-Tab>"] = { "select_prev", "fallback" },
-    ['<Up>'] = { 'select_prev', 'fallback' },
-    ['<Down>'] = { 'select_next', 'fallback' },
-    ["<C-Tab>"] = { "snippet_forward", "fallback" },
-    ["<C-q>"] = { "snippet_backward", "fallback" },
+    ["<Up>"] = { "select_prev", "fallback" },
+    ["<Down>"] = { "select_next", "fallback" },
   },
   appearance = {
     nerd_font_variant = "mono"
@@ -23,14 +21,12 @@ local opts = {
   completion = {
     documentation = { auto_show = false, auto_show_delay_ms = 500 },
     accept = { auto_brackets = { enabled = true }, },
-    menu = {
-      border = "rounded",
-    },
+    menu = { border = "rounded", },
   },
   sources = {
     default = { "lsp", "path", "snippets", "buffer" },
   },
-  fuzzy = { implementation = "lua" },
-  signature = { enabled = true },
+  fuzzy = { implementation = "prefer_rust_with_warning" },
+  signature = { enabled = false },
 }
-cmp.setup(opts)
+require("blink.cmp").build()
