@@ -1,5 +1,5 @@
 -- Buffers
-vim.keymap.set("n", "<leader>bb", ":Bdelete<cr>", { desc = "Close current buffer" })
+vim.keymap.set("n", "<leader>bb", ":bd<cr>", { desc = "Close active buffer" })
 vim.keymap.set("n", "<leader>bd", ":Bdelete!<cr>", { desc = "Close buffer no save" })
 vim.keymap.set("n", "<leader>bh", ":bp<cr>", { desc = "Prev Buffer" })
 vim.keymap.set("n", "<leader>bl", ":bn<cr>", { desc = "Next Buffer" })
@@ -11,16 +11,6 @@ vim.keymap.set("n", "<leader>fb", ":FzfLua buffers<cr>", { desc = "Find buffers"
 vim.keymap.set("n", "<leader>ff", ":FzfLua files<cr>", { desc = "Find files" })
 vim.keymap.set("n", "<leader>fr", ":FzfLua oldfiles<cr>", { desc = "Find old files" })
 
--- Trouble
-vim.keymap.set("n", "<leader>xx", ":Trouble diagnostics toggle<cr>", { desc = "Diagnostics (Trouble)" })
-vim.keymap.set("n", "<leader>xX", ":Trouble Trouble diagnostics toggle filter.buf=0<cr>",
-  { desc = "Buffer Diagnostics (Trouble)" })
-vim.keymap.set("n", "<leader>xs", ":Trouble symbols toggle focus=false<cr><cr>", { desc = "Symbols (Trouble)" })
-vim.keymap.set("n", "<leader>xl", ":Trouble lsp toggle focus=false win.position=right<cr>",
-  { desc = "LSP Definitions / references / ... (Trouble)" })
-vim.keymap.set("n", "<leader>xL", ":Trouble loclist toggle<cr>", { desc = "Location List (Trouble)" })
-vim.keymap.set("n", "<leader>xQ", ":Trouble qflist toggle<cr>", { desc = "Quickfix List (Trouble)" })
-
 -- Neotest
 vim.keymap.set("n", "<leader>er", function() neotest.run.run() end, { desc = "Run Nearest Test" })
 vim.keymap.set("n", "<leader>ee", function() neotest.run.run(vim.fn.expand("%")) end, { desc = "Run File" })
@@ -30,7 +20,8 @@ vim.keymap.set("n", "<leader>ed", function() neotest.diagnostic.enable() end, { 
 
 -- Dap
 vim.keymap.set("n", "<leader>dc", function() require("dap").continue() end, { desc = "Debug: Start/Continue" })
-vim.keymap.set("n", "<leader>db", function() require("dap").toggle_breakpoint() end, { desc = "Debug: Toggle Breakpoint" })
+vim.keymap.set("n", "<leader>db", function() require("dap").toggle_breakpoint() end,
+  { desc = "Debug: Toggle Breakpoint" })
 vim.keymap.set("n", "<leader>di", function() require("dap").step_into() end, { desc = "Debug: Step Into" })
 vim.keymap.set("n", "<leader>do", function() require("dap").step_over() end, { desc = "Debug: Step Over" })
 vim.keymap.set("n", "<leader>dt", function() require("dap").terminate() end, { desc = "Debug: Terminate" })
@@ -63,21 +54,10 @@ vim.keymap.set("n", "<leader>as", function()
 end, { desc = "Aerial Search" })
 
 -- Oil
-vim.keymap.set("n", "<leader>rr", ":Oil<cr>", { desc = "Open oil.nvim" })
-vim.keymap.set("n", "<leader>rf", ":Oil --float<cr>", { desc = "Open oil float" })
-
--- Basic
-vim.keymap.set("n", "<leader>ww", ":w!<cr>", { desc = "Save file" })
-vim.keymap.set("n", "<C-s>", ":w!<cr>", { desc = "Save file with force" })
-vim.keymap.set("n", "<leader>wq", ":qa!<cr>", { desc = "Quit" })
-vim.keymap.set("n", "<leader>we", ":x<cr>", { desc = "Write & quit" })
-
--- NeoTree
-vim.keymap.set("n", "<leader>tt", ":Neotree<cr>", { desc = "Toggle NeoTree" })
-vim.keymap.set("n", "<leader>tr", ":Neotree reveal<cr>", { desc = "Reveal file in tree" })
+vim.keymap.set("n", "<leader>tr", ":Oil<cr>", { desc = "Open oil.nvim" })
+vim.keymap.set("n", "<leader>tt", ":Oil --float<cr>", { desc = "Open oil float" })
 
 -- Gitsigns
 vim.keymap.set("n", "<leader>gl", "&diff ? 'gl' : ':Gitsigns next_hunk<cr>'", { expr = true, desc = "Next git hunk" })
 vim.keymap.set("n", "<leader>gg", "&diff ? 'gh' : ':Gitsigns prev_hunk<cr>'", { expr = true, desc = "Prev git hunk" })
-vim.keymap.set("n", "<leader>gs", ":Gitsigns stage_hunk<cr>", { desc = "Stage git hunk" })
 vim.keymap.set("n", "<leader>gu", ":Gitsigns undo_stage_hunk<cr>", { desc = "Undo stage hunk" })
