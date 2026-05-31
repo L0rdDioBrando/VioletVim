@@ -1,3 +1,6 @@
+vim.g.snippet_jump_forward = ""
+vim.g.snippet_jump_backward = ""
+
 -- Plugins
 require("core.options")
 require("core.colors")
@@ -17,7 +20,6 @@ require("plugins.gitsigns")
 require("plugins.highlight-colors")
 require("plugins.lazydev")
 require("plugins.lsp-config")
---require("plugins.neo-tree") -- Optional
 require("plugins.luasnip")
 require("plugins.mason-lspconfig")
 require("plugins.mason")

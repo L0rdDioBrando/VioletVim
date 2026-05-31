@@ -61,3 +61,6 @@ vim.keymap.set("n", "<leader>tt", ":Oil --float<cr>", { desc = "Open oil float" 
 vim.keymap.set("n", "<leader>gl", "&diff ? 'gl' : ':Gitsigns next_hunk<cr>'", { expr = true, desc = "Next git hunk" })
 vim.keymap.set("n", "<leader>gg", "&diff ? 'gh' : ':Gitsigns prev_hunk<cr>'", { expr = true, desc = "Prev git hunk" })
 vim.keymap.set("n", "<leader>gu", ":Gitsigns undo_stage_hunk<cr>", { desc = "Undo stage hunk" })
+
+-- Save
+vim.keymap.set({ 'n', 'v' }, '<C-s>', ':w!<cr>')
