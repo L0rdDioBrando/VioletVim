@@ -4,7 +4,7 @@ vim.schedule(function()
     check_ts = true,
     fast_wrap = {
       map = '<We>',
-      chars = { '{', '[', '(', '"', "'" },
+      chars = { "{", "[", "(", '"', "'", "<", },
       pattern = [=[[%'%"%>%]%)%}%,]]=],
       end_key = '$',
       keys = 'qwertyuiopzxcvbnmasdfghjkl',
