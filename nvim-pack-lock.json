@@ -12,8 +12,12 @@
       "rev": "585db11015abccf673dc5bd6502714d5655554be",
       "src": "https://github.com/stevearc/aerial.nvim"
     },
+    "alpha-nvim": {
+      "rev": "6c6a89d5b068b5251c8bdf0dd57bb921bcfeeb09",
+      "src": "https://github.com/goolord/alpha-nvim"
+    },
     "blink.cmp": {
-      "rev": "56507d063ff412baf49a359e7f57d8473a8b6547",
+      "rev": "7c0fae7fb37c4ee43927df88f4f1b7eb8e33a520",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "blink.indent": {
@@ -21,15 +25,19 @@
       "src": "https://github.com/saghen/blink.indent"
     },
     "blink.lib": {
-      "rev": "41bc1199dd1f5f0687efbd522061b22002c2d4c5",
+      "rev": "c09dd66e9ad97e1a7777f3fa5f0504ca2e877231",
       "src": "https://github.com/saghen/blink.lib"
+    },
+    "blink.pairs": {
+      "rev": "766733ca6e1567384f90cbf1b1eddf1a6318b38d",
+      "src": "https://github.com/saghen/blink.pairs"
     },
     "bufdelete.nvim": {
       "rev": "f6bcea78afb3060b198125256f897040538bcb81",
       "src": "https://github.com/famiu/bufdelete.nvim"
     },
     "catppuccin": {
-      "rev": "8edd468af4d63212b84d69b2ddb5ffc9023ef5eb",
+      "rev": "0303a7208dba448c459767486a38a6ec05c4216b",
       "src": "https://github.com/catppuccin/nvim"
     },
     "conform.nvim": {
@@ -49,7 +57,7 @@
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "fzf-lua": {
-      "rev": "fea9eedc6894c44d44cbb772a5cd11c93b82d7a1",
+      "rev": "d340ade20dfe4ef87e6f9a63b9905be91965b5dc",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "gitsigns.nvim": {
@@ -65,7 +73,7 @@
       "src": "https://github.com/folke/lazydev.nvim"
     },
     "mason-lspconfig.nvim": {
-      "rev": "7b01e2974a47d489bb92f47a41e4c0088ea8f86e",
+      "rev": "0a695750d747db1e7e70bcf0267ef8951c95fc83",
       "src": "https://github.com/mason-org/mason-lspconfig.nvim"
     },
     "mason-nvim-dap.nvim": {
@@ -73,11 +81,11 @@
       "src": "https://github.com/jay-babu/mason-nvim-dap.nvim"
     },
     "mason.nvim": {
-      "rev": "bb639d4bf385a4d89f478b83af4d770be05ab7eb",
+      "rev": "16ba83bfc8a25f52bb545134f5bee082b195c460",
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "neo-tree.nvim": {
-      "rev": "2734f5cf4c59e79bbcc4521eb8d1e26fd305ad3c",
+      "rev": "b83de592f2a8bdd749a00668a8253878cd801f15",
       "src": "https://github.com/nvim-neo-tree/neo-tree.nvim"
     },
     "neotest": {
@@ -177,7 +185,7 @@
       "src": "https://github.com/gbprod/yanky.nvim"
     },
     "yazi.nvim": {
-      "rev": "e11edb740cf9e7fee303955f05277d0b94098eb5",
+      "rev": "d4912adef07b330baf0fc92a4a621a4cbfb3e826",
       "src": "https://github.com/mikavilpas/yazi.nvim"
     }
   }
