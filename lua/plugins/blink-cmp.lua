@@ -7,13 +7,19 @@ vim.pack.add {
 require("blink.cmp").setup {
   snippets = { preset = "luasnip" },
   keymap = {
-    preset = "enter",
-    ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
+    ["<C-Space>"] = { "show", "show_documentation", "hide_documentation" },
+    ["<Up>"] = { "select_prev", "fallback" },
+    ["<Down>"] = { "select_next", "fallback" },
+    ["<C-N>"] = { "select_next", "show" },
+    ["<C-P>"] = { "select_prev", "show" },
+    ["<C-J>"] = { "select_next", "fallback" },
+    ["<C-K>"] = { "select_prev", "fallback" },
+    ["<C-U>"] = { "scroll_documentation_up", "fallback" },
+    ["<C-D>"] = { "scroll_documentation_down", "fallback" },
+    ["<C-e>"] = { "hide", "fallback" },
     ["<CR>"] = { "accept", "fallback" },
     ["<Tab>"] = { "select_next", "fallback" },
     ["<S-Tab>"] = { "select_prev", "fallback" },
-    ["<Up>"] = { "select_prev", "fallback" },
-    ["<Down>"] = { "select_next", "fallback" },
   },
   appearance = {
     nerd_font_variant = "mono"
