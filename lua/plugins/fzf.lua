@@ -8,7 +8,7 @@ require("fzf-lua").setup {
     preview = {
       border = "rounded",
       scrollbar = "float",
-      image_renderer = "ueberzugpp",
+      image_renderer = "viu",
     },
     height = 0.85,
     width = 0.8,
@@ -50,5 +50,15 @@ require("fzf-lua").setup {
     scrollbar_f = "PmenuSel",
     scrollbar_e = "PmenuSbar",
   },
-  previewers = {},
+  previewers = {
+    bat        = {
+      cmd  = "bat",
+      args = "--color=always --style=numbers,changes",
+    },
+    extensions = {
+      ["png"] = { "chafa", "{file}" },
+      ["svg"] = { "chafa", "{file}" },
+      ["jpg"] = { "chafa", "{file}" },
+    },
+  },
 }
