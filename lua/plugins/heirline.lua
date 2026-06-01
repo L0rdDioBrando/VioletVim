@@ -398,12 +398,4 @@ local Statusline = {
 heirline.setup({
   statusline = Statusline,
   tabline = BufferLine,
-  opts = {
-    disable_winbar_cb = function(args)
-      return conditions.buffer_matches({
-        buftype = { "nofile", "prompt", "help", "quickfix" },
-        filetype = { "^git.*", "fugitive", "TelescopePrompt" },
-      }, args.buf)
-    end,
-  }
 })
