@@ -9,6 +9,7 @@ require("conform").setup({
     javascript = { "prettierd", "prettier", stop_after_first = true },
     json = { "jq" },
     jsonc = { "jq" },
+    kdl = { "kdlfmt" },
   },
   format_on_save = {
     timeout_ms = 500,
