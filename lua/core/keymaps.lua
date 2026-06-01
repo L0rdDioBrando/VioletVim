@@ -10,6 +10,7 @@ vim.keymap.set("n", "<leader>fg", ":FzfLua live_grep<cr>", { desc = "Live grep" 
 vim.keymap.set("n", "<leader>fb", ":FzfLua buffers<cr>", { desc = "Find buffers" })
 vim.keymap.set("n", "<leader>ff", ":FzfLua files<cr>", { desc = "Find files" })
 vim.keymap.set("n", "<leader>fr", ":FzfLua oldfiles<cr>", { desc = "Find old files" })
+vim.keymap.set("n", "<leader>fz", ":FzfLua zoxide<cr>", { desc = "Find zoxide history" })
 
 -- Neotest
 vim.keymap.set("n", "<leader>er", function() neotest.run.run() end, { desc = "Run Nearest Test" })
@@ -43,7 +44,6 @@ vim.keymap.set("n", "<leader>yy", ":YankyRingHistory<cr>", { desc = "Open yanky 
 
 -- Yazi
 vim.keymap.set("n", "<leader>s", ":Yazi<cr>", { desc = "Open yazi" })
-
 -- Aerial
 vim.keymap.set("n", "<leader>aa", ":AerialOpen<cr>", { desc = "Toggle aerial" })
 vim.keymap.set("n", "<leader>af", ":AerialNavToggle<cr>", { desc = "Open/Close aerial float" })
