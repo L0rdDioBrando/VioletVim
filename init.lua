@@ -1,6 +1,3 @@
-vim.g.snippet_jump_forward = ""
-vim.g.snippet_jump_backward = ""
-
 -- Plugins
 require("core.options")
 require("core.colors")
@@ -11,6 +8,7 @@ require("plugins.dashboard")
 require("plugins.heirline")
 require("plugins.conform")
 require("plugins.autopairs")
+--require("plugins.blink-pairs")
 require("plugins.blink-cmp")
 require("plugins.fzf")
 require("plugins.blink-indent")
@@ -33,5 +31,6 @@ require("plugins.yazi")
 require("plugins.neotest")
 require("plugins.nvim-lint")
 require("plugins.surround")
+
 -- Colorsheme
 vim.cmd('colorscheme catppuccin-macchiato')
