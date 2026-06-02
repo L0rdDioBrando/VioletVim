@@ -1,4 +1,5 @@
 vim.pack.add { "https://github.com/rcarriga/nvim-notify" }
+
 require("notify").setup({
   background_colour = "Normal",
   max_height = function() return math.floor(vim.o.lines * 0.75) end,

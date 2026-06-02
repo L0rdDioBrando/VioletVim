@@ -1,5 +1,6 @@
 vim.schedule(function()
   vim.pack.add { "https://github.com/stevearc/aerial.nvim" }
+
   require("aerial").setup({
     backends = { "treesitter", "lsp", "markdown", "asciidoc", "man" },
 

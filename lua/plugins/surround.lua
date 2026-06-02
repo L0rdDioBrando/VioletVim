@@ -1,7 +1,5 @@
 vim.schedule(function()
-  vim.pack.add({ {
-    src = "https://github.com/kylechui/nvim-surround",
-    version = vim.version.range("main"),
-  } })
+  vim.pack.add { "https://github.com/kylechui/nvim-surround" }
+
   require("nvim-surround").setup({})
 end)

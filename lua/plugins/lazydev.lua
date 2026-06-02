@@ -1,5 +1,6 @@
 vim.schedule(function()
   vim.pack.add { "https://github.com/folke/lazydev.nvim" }
+
   require("lazydev").setup({
     ft = "lua",
     opts = {

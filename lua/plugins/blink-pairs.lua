@@ -2,6 +2,7 @@ vim.pack.add {
   "https://github.com/saghen/blink.lib",
   "https://github.com/saghen/blink.pairs"
 }
+
 require("blink.pairs").build():pwait(60000)
 require("blink.pairs").setup({
   mappings = {
@@ -15,9 +16,29 @@ require("blink.pairs").setup({
     pairs = {},
   },
   highlights = {
-    enabled = false,
+    enabled = true,
     cmdline = true,
-    groups = { "BlinkPairsOrange", "BlinkPairsPurple", "BlinkPairsBlue" },
+    groups = {
+      --[["Rosewater",
+      "Flamingo",
+      "Pink",
+      "Mauve",
+      "Red",
+      "Maroon",
+      "Peach",
+      "Yellow",
+      "Green",
+      "Teal",
+      "Sky",
+      "Sapphire",
+      "Blue",
+      "Lavender"]]
+      "Rosewater",
+      "Lavender",
+      "Blue",
+      "Sapphire",
+      "Mauve"
+    },
     unmatched_group = "BlinkPairsUnmatched",
 
     matchparen = {

@@ -1,5 +1,6 @@
 vim.schedule(function()
-  vim.pack.add { "https://github.com/gbprod/yanky.nvim", "https://github.com/ibhagwan/fzf-lua" }
+  vim.pack.add { "https://github.com/gbprod/yanky.nvim" }
+
   require("yanky").setup({
     ring = {
       storage = "shada",

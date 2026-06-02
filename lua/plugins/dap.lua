@@ -7,8 +7,10 @@ vim.schedule(function()
     "https://github.com/nvim-neotest/nvim-nio",
     "https://github.com/leoluz/nvim-dap-go",
   }
+
   local dap = require("dap")
   local dapui = require("dapui")
+
   require("dap-go").setup {
     dap_configurations = {
       {

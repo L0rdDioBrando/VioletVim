@@ -3,6 +3,7 @@ vim.schedule(function()
     "https://github.com/L3MON4D3/LuaSnip",
     "https://github.com/rafamadriz/friendly-snippets"
   }
+
   require("luasnip.loaders.from_vscode").lazy_load()
 
   require("luasnip").setup({
@@ -10,6 +11,7 @@ vim.schedule(function()
     delete_check_events = "TextChanged",
     region_check_events = "InsertEnter",
   })
+
   local s = require("luasnip").snippet
   local t = require("luasnip").text_node
   local i = require("luasnip").insert_node
@@ -20,6 +22,12 @@ vim.schedule(function()
       t({ "", "  imports = [", "" }),
       t({ "    " }), i(1),
       t({ "", "  ];", "}" }),
+    }),
+    s("shell", {
+      t({ "{ pkgs ? import <nixpkgs> {} }:", "", "pkgs.mkShell {", "  nativeBuildInputs = with pkgs; [", "    " }),
+      i(1, "git"),
+      t({ "", "  ];", "", "  shellHook = ''", "    " }), i(0),
+      t({ "", "  '';", "}" })
     })
   })
 end)

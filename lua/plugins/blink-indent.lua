@@ -1,7 +1,6 @@
 vim.schedule(function()
   vim.pack.add { "https://github.com/saghen/blink.indent" }
-  --- @module "blink.indent"
-  --- @type blink.indent.Config
+
   require("blink.indent").setup({
     blocked = {
       buftypes = { include_defaults = true },

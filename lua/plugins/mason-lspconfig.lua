@@ -4,6 +4,7 @@ vim.schedule(function()
     "https://github.com/mason-org/mason-lspconfig.nvim",
     "https://github.com/neovim/nvim-lspconfig"
   }
+
   require("mason-lspconfig").setup({
     automatic_enable = {
       "gopls",

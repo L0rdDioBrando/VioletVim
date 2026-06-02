@@ -1,5 +1,6 @@
 vim.schedule(function()
   vim.pack.add { "https://github.com/lewis6991/gitsigns.nvim" }
+
   require("gitsigns").setup {
     signs = {
       add = { text = "┃" },
@@ -19,8 +20,8 @@ vim.schedule(function()
     },
     signs_staged_enable = true,
     signcolumn = true, -- Toggle with `:Gitsigns toggle_signs`
-    numhl = true,    -- Toggle with `:Gitsigns toggle_numhl`
-    linehl = false,  -- Toggle with `:Gitsigns toggle_linehl`
+    numhl = true,      -- Toggle with `:Gitsigns toggle_numhl`
+    linehl = false,    -- Toggle with `:Gitsigns toggle_linehl`
     word_diff = false, -- Toggle with `:Gitsigns toggle_word_diff`
     watch_gitdir = {
       follow_files = true

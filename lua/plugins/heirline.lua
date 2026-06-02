@@ -1,4 +1,5 @@
 vim.pack.add { "https://github.com/rebelot/heirline.nvim", "https://github.com/nvim-tree/nvim-web-devicons" }
+
 local utils = require("heirline.utils")
 local heirline = require("heirline")
 local conditions = require("heirline.conditions")
@@ -127,56 +128,8 @@ local TablineBufferBlock = utils.surround({ "", "" }, function(self)
   end
 end, { TablineFileNameBlock, TablineCloseButton })
 
-local Tabpage = {
-  provider = function(self)
-    return "%" .. self.tabnr .. "T " .. self.tabpage .. " %T"
-  end,
-  hl = function(self)
-    if not self.is_active then
-      return "TabLine"
-    else
-      return "TabLineSel"
-    end
-  end,
-}
-
-local TabpageClose = {
-  provider = "%999X  %X",
-  hl = "TabLine",
-}
-
-local TabPages = {
-  condition = function()
-    return #vim.api.nvim_list_tabpages() >= 2
-  end,
-  { provider = "%=" },
-  utils.make_tablist(Tabpage),
-  TabpageClose,
-}
-
-local TabLineOffset = {
-  condition = function(self)
-    local win = vim.api.nvim_tabpage_list_wins(0)[1]
-    local bufnr = vim.api.nvim_win_get_buf(win)
-    self.winid = win
-
-    if vim.bo[bufnr].filetype == "neo-tree" then
-      self.title = ""
-      return true
-    end
-  end,
-
-  provider = function(self)
-    local width = vim.api.nvim_win_get_width(self.winid)
-    return string.rep(" ", width + 1)
-  end,
-
-  hl = { bg = colors.mantle },
-}
-
 local BufferLine = {
   hl = { bg = colors.crust },
-  TabLineOffset,
   utils.make_buflist(
     TablineBufferBlock,
     { provider = "", hl = { fg = colors.text } },
@@ -295,12 +248,6 @@ local Diagnostics = {
   },
 }
 
-local FileNameBlock = {
-  init = function(self)
-    self.filename = vim.api.nvim_buf_get_name(0)
-  end,
-}
-
 local FileType = {
   provider = function()
     return string.lower(vim.bo.filetype) .. " "
@@ -338,20 +285,6 @@ local FileName = {
       bold = true,
     }
   end,
-}
-
-local FileIcon = {
-  init = function(self)
-    local filename = self.filename
-    local extension = vim.fn.fnamemodify(filename, ":e")
-    self.icon, self.icon_color = require("nvim-web-devicons").get_icon_color(filename, extension, { default = true })
-  end,
-  provider = function(self)
-    return self.icon and (self.icon .. " ")
-  end,
-  hl = function(self)
-    return { fg = self.icon_color }
-  end
 }
 
 local Statusline = {

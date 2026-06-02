@@ -1,4 +1,5 @@
 vim.pack.add { "https://github.com/romus204/tree-sitter-manager.nvim" }
+
 require("tree-sitter-manager").setup({
   ensure_installed = {
     "lua",
@@ -14,7 +15,7 @@ require("tree-sitter-manager").setup({
     "bash",
     "regex",
     "c"
-  }, -- Add more languages
+  }, -- TODO: Add more languages
   border = "rounded",
   auto_install = true,
   highlight = true

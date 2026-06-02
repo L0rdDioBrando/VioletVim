@@ -1,4 +1,5 @@
 vim.pack.add { "nvim-tree/nvim-web-devicons" }
+
 require("nvim-web-devicons").setup({
   color_icons = true,
   default = true,

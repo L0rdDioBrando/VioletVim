@@ -4,6 +4,7 @@ vim.pack.add {
   "https://github.com/nvim-tree/nvim-web-devicons",
   "https://github.com/MunifTanjim/nui.nvim",
 }
+
 require("neo-tree").setup({
   close_if_last_window = true,
   window = {
