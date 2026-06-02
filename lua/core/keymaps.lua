@@ -12,6 +12,25 @@ vim.keymap.set("n", "<leader>ff", ":FzfLua files<cr>", { desc = "Find files" })
 vim.keymap.set("n", "<leader>fr", ":FzfLua oldfiles<cr>", { desc = "Find old files" })
 vim.keymap.set("n", "<leader>fz", ":FzfLua zoxide<cr>", { desc = "Find zoxide history" })
 
+-- LuaSnip
+vim.keymap.set({ "i", "s" }, "<C-k>", function()
+  if require("luasnip").expand_or_jumpable() then
+    require("luasnip").expand_or_jump()
+  end
+end, { silent = true })
+
+vim.keymap.set({ "i", "s" }, "<C-j>", function()
+  if require("luasnip").jumpable(-1) then
+    require("luasnip").jump(-1)
+  end
+end, { silent = true })
+
+vim.keymap.set({ "i", "s" }, "<C-l>", function()
+  if require("luasnip").choice_active() then
+    require("luasnip").change_choice(1)
+  end
+end, { silent = true })
+
 -- Neotest
 vim.keymap.set("n", "<leader>er", function() neotest.run.run() end, { desc = "Run Nearest Test" })
 vim.keymap.set("n", "<leader>ee", function() neotest.run.run(vim.fn.expand("%")) end, { desc = "Run File" })
