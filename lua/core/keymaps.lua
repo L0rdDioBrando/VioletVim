@@ -63,6 +63,7 @@ vim.keymap.set("n", "<leader>yy", ":YankyRingHistory<cr>", { desc = "Open yanky 
 
 -- Yazi
 vim.keymap.set("n", "<leader>s", ":Yazi<cr>", { desc = "Open yazi" })
+
 -- Aerial
 vim.keymap.set("n", "<leader>aa", ":AerialOpen<cr>", { desc = "Toggle aerial" })
 vim.keymap.set("n", "<leader>af", ":AerialNavToggle<cr>", { desc = "Open/Close aerial float" })
@@ -81,5 +82,6 @@ vim.keymap.set("n", "<leader>gl", "&diff ? 'gl' : ':Gitsigns next_hunk<cr>'", { 
 vim.keymap.set("n", "<leader>gg", "&diff ? 'gh' : ':Gitsigns prev_hunk<cr>'", { expr = true, desc = "Prev git hunk" })
 vim.keymap.set("n", "<leader>gu", ":Gitsigns undo_stage_hunk<cr>", { desc = "Undo stage hunk" })
 
--- Save
-vim.keymap.set({ 'n', 'v' }, '<C-s>', ':w!<cr>')
+-- Other
+vim.keymap.set({ "n", "v", }, "<C-s>", ":w!<cr>", { desc = "Save file" })                       -- Save file
+vim.keymap.set("n", "<leader>u", ":lua vim.pack.update()<cr>", { desc = "Update all plugins" }) -- Update all plugins
