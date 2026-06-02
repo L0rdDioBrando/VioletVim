@@ -2,9 +2,21 @@ vim.schedule(function()
   vim.pack.add { "https://github.com/stevearc/oil.nvim", "https://github.com/nvim-tree/nvim-web-devicons" }
   require("oil").setup({
     default_file_explorer = true,
+    delete_to_trash = true,
     columns = {
       "icon",
       "permissions"
+    },
+    keymaps = {
+      ["?"] = "actions.show_help",
+      ["<CR>"] = "actions.select",
+      ["<C-v>"] = "actions.select_vsplit",
+      ["<C-x>"] = "actions.select_split",
+      ["q"] = "actions.close",
+      ["u"] = "actions.parent",
+      ["w"] = "actions.open_cwd",
+      ["`"] = "actions.cd",
+      ["s"] = "actions.toggle_hidden",
     },
     view_options = {
       show_hidden = true,
