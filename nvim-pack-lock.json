@@ -29,7 +29,7 @@
       "src": "https://github.com/saghen/blink.lib"
     },
     "blink.pairs": {
-      "rev": "766733ca6e1567384f90cbf1b1eddf1a6318b38d",
+      "rev": "436857a5c2558c8f66a61ce4745d1342789a4881",
       "src": "https://github.com/saghen/blink.pairs"
     },
     "bufdelete.nvim": {
