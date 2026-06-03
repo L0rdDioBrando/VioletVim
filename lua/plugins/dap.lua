@@ -3,7 +3,6 @@ vim.schedule(function()
     "https://github.com/mfussenegger/nvim-dap",
     "https://github.com/rcarriga/nvim-dap-ui",
     "https://github.com/theHamsta/nvim-dap-virtual-text",
-    "https://github.com/jay-babu/mason-nvim-dap.nvim",
     "https://github.com/nvim-neotest/nvim-nio",
     "https://github.com/leoluz/nvim-dap-go",
   }
