@@ -78,15 +78,14 @@ require("catppuccin").setup({
     -- Default
     Normal = { bg = colors.base, fg = colors.text },
     NormalFloat = { fg = colors.lavender },
-    Pmenu = { bg = colors.base, fg = colors.lavender },
+    FloatBorder = { fg = colors.lavender },
+    Pmenu = { bg = colors.mantle, fg = colors.lavender },
     FloatTitle = { bg = colors.base, fg = colors.lavender },
-    -- Dashboard
-    CustomGroup = { fg = colors.lavender, bold = true },
-    DashboardHeader = { fg = colors.lavender },
+    -- Mini.files
+    MiniFilesDirectory = { fg = colors.lavender },
     -- Which-Key
     WhichKeyBorder = { fg = colors.lavender },
     -- Fzf-Lua
-    FloatBorder = { fg = colors.lavender },
     FzfLuaBorder = { fg = colors.lavender },
     FzfLuaNormal = { bg = colors.base, fg = colors.lavender },
     -- Blink
@@ -132,6 +131,11 @@ require("catppuccin").setup({
     NotifyTRACEIcon = { fg = colors.blue },
     NotifyTRACETitle = { fg = colors.text },
     NotifyTRACEBody = { fg = colors.lavender, bg = colors.base },
+    -- Neotest
+    NeotestFile = { fg = colors.text },
+    NeotestDir = { fg = colors.lavender, bold = true },
+    NeotestFailed = { fg = colors.red, bold = true },
+    NeotestPassed = { fg = colors.teal, bold = true }
   },
   default_integrations = false,
   auto_integrations = true,
@@ -140,9 +144,6 @@ require("catppuccin").setup({
       style = "bordered",
     },
     notify = false,
-    neotree = false,
-    mason = true,
-    which_key = true,
     native_lsp = {
       enabled = true,
       underlines = { errors = { "undercurl" } },
