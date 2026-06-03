@@ -39,7 +39,7 @@ local TablineFileFlags = {
       if vim.api.nvim_get_option_value("buftype", { buf = self.bufnr }) == "terminal" then
         return "  "
       else
-        return ""
+        return "  "
       end
     end,
     hl = { fg = colors.peach },
@@ -119,6 +119,7 @@ local TablineCloseButton = {
   },
   { provider = " " },
 }
+
 
 local TablineBufferBlock = utils.surround({ "", "" }, function(self)
   if self.is_active then
@@ -200,7 +201,7 @@ local Git = {
 
   {
     provider = function(self)
-      return "  " .. self.status_dict.head .. " "
+      return "  " .. self.status_dict.head .. " "
     end,
     hl = { bold = true }
   },
