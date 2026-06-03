@@ -25,7 +25,7 @@ vim.schedule(function()
     }),
     s("shell", {
       t({ "{ pkgs ? import <nixpkgs> {} }:", "", "pkgs.mkShell {", "  nativeBuildInputs = with pkgs; [", "    " }),
-      i(1, "git"),
+      i(1, ""),
       t({ "", "  ];", "", "  shellHook = ''", "    " }), i(0),
       t({ "", "  '';", "}" })
     })
