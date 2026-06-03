@@ -25,7 +25,7 @@ clang *or* gcc,
 
 fzf,
 
-ueberzugpp,
+viu,
 
 rg,
 
