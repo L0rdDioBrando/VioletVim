@@ -32,11 +32,12 @@ vim.keymap.set({ "i", "s" }, "<C-l>", function()
 end, { silent = true })
 
 -- Neotest
-vim.keymap.set("n", "<leader>er", function() neotest.run.run() end, { desc = "Run Nearest Test" })
-vim.keymap.set("n", "<leader>ee", function() neotest.run.run(vim.fn.expand("%")) end, { desc = "Run File" })
-vim.keymap.set("n", "<leader>es", function() neotest.summary.toggle() end, { desc = "Toggle Summary" })
-vim.keymap.set("n", "<leader>eo", function() neotest.output.open({ enter = true }) end, { desc = "Show Output" })
-vim.keymap.set("n", "<leader>ed", function() neotest.diagnostic.enable() end, { desc = "Show Diagnostics" })
+vim.keymap.set("n", "<leader>er", function() require("neotest").run.run() end, { desc = "Run nearest test" })
+vim.keymap.set("n", "<leader>ee", function() require("neotest").run.run(vim.fn.expand("%")) end, { desc = "Run file" })
+vim.keymap.set("n", "<leader>es", function() require("neotest").summary.toggle() end, { desc = "Toggle Summary" })
+vim.keymap.set("n", "<leader>eo", function() require("neotest").output.open({ enter = true }) end,
+  { desc = "Show Output" })
+vim.keymap.set("n", "<leader>ed", function() require("neotest").diagnostic.enable() end, { desc = "Show Diagnostics" })
 
 -- Dap
 vim.keymap.set("n", "<leader>dc", function() require("dap").continue() end, { desc = "Debug: Start/Continue" })
@@ -48,11 +49,6 @@ vim.keymap.set("n", "<leader>dt", function() require("dap").terminate() end, { d
 vim.keymap.set("n", "<leader>du", function() require("dapui").toggle() end, { desc = "Debug: Toggle UI" })
 vim.keymap.set("n", "<leader>dgt", function() require("dap-go").debug_test() end, { desc = "Debug: Go Test" })
 vim.keymap.set("n", "<leader>dgl", function() require("dap-go").debug_last_test() end, { desc = "Debug: Last Go Test" })
-
--- Mason
-vim.keymap.set("n", "<leader>mm", ":Mason<cr>", { desc = "Open Mason" })
-vim.keymap.set("n", "<leader>mu", ":MasonUpdate<cr>", { desc = "Update Mason" })
-vim.keymap.set("n", "<leader>mi", ":MasonInstall ", { desc = "Mason install LSP server" })
 
 -- Yanky
 vim.keymap.set({ "n", "x" }, "p", "<Plug>(YankyPutAfter)", { desc = "Put after" })
