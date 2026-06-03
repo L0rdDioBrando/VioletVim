@@ -28,9 +28,8 @@ wk.add({
   { "<leader>y", group = "Clipboard", icon = { icon = " ", color = "cyan" } },
   { "<leader>t", group = "Oil", icon = { icon = "󰪶", color = "blue" } },
   { "<leader>a", group = "Aerial", icon = { icon = "󱐋", color = "yellow" } },
-  { "<leader>m", group = "Mason", icon = { icon = "󱌢 ", color = "cyan" } },
   { "<leader>e", group = "Neotest", icon = { icon = "󰙨 ", color = "yellow" } },
   { "<leader>s", icon = { icon = "󰪶 ", color = "magenta" } },
   { "<C-s>", icon = { icon = " ", color = "cyan" } },
-  { "<leader>u", icon = { icon = "󰚰 ", color = "teal" } }
+  { "<leader>u", icon = { icon = "󰚰 ", color = "teal" } },
 })
