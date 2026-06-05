@@ -49,11 +49,6 @@ require("nvim-web-devicons").setup({
   },
 
   override_by_extension = {
-    [""] = {
-      icon = "",
-      color = "#a6da95",
-      name = "NoName"
-    },
     ["log"] = {
       icon = "",
       color = "#b7bdf8",

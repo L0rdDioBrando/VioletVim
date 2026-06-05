@@ -19,17 +19,15 @@ wk.setup({
   },
 })
 
-wk.add({
+--[[wk.add({
   { "<leader>f", group = "Find" },
   { "<leader>b", group = "Buffers" },
-  { "<leader>w", group = "Other", icon = { icon = "󰆓 ", color = "green" } },
-  { "<leader>g", group = "Git", icon = { icon = "󰊢 ", color = "orange" } },
-  { "<leader>d", group = "Debugger", icon = { icon = "󰃤 ", color = "red" } },
-  { "<leader>y", group = "Clipboard", icon = { icon = " ", color = "cyan" } },
-  { "<leader>t", group = "Oil", icon = { icon = "󰪶", color = "blue" } },
-  { "<leader>a", group = "Aerial", icon = { icon = "󱐋", color = "yellow" } },
-  { "<leader>e", group = "Neotest", icon = { icon = "󰙨 ", color = "yellow" } },
-  { "<leader>s", icon = { icon = "󰪶 ", color = "magenta" } },
-  { "<C-s>", icon = { icon = " ", color = "cyan" } },
-  { "<leader>u", icon = { icon = "󰚰 ", color = "teal" } },
-})
+  { "<leader>w", group = "Other", icon = { icon = "󰆓 ", color = colors.green } },
+  { "<leader>g", group = "Git", icon = { icon = "󰊢 ", color = colors.peach } },
+  { "<leader>y", group = "Clipboard", icon = { icon = " ", color = colors.sapphire } },
+  { "<leader>t", group = "Oil", icon = { icon = "󰪶", color = colors.blue } },
+  { "<leader>a", group = "Aerial", icon = { icon = "󱐋", color = colors.yellow } },
+  { "<leader>s", icon = { icon = "󰪶 ", color = colors.lavender } },
+  { "<C-s>", icon = { icon = " ", color = colors.teal } },
+  { "<leader>u", icon = { icon = "󰚰 ", color = colors.sky } },
+})]]
