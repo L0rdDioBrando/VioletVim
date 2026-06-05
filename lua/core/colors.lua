@@ -81,6 +81,7 @@ require("catppuccin").setup({
     FloatBorder = { fg = colors.lavender },
     Pmenu = { bg = colors.mantle, fg = colors.lavender },
     FloatTitle = { bg = colors.base, fg = colors.lavender },
+    Directory = { fg = colors.lavender },
     -- Mini.files
     MiniFilesDirectory = { fg = colors.lavender },
     -- Which-Key
