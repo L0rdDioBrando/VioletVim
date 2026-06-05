@@ -249,6 +249,20 @@ local Diagnostics = {
   },
 }
 
+local LSPActive = {
+  condition = conditions.lsp_attached,
+  update = { 'LspAttach', 'LspDetach' },
+
+  provider = function()
+    local names = {}
+    for i, server in pairs(vim.lsp.get_clients({ bufnr = 0 })) do
+      table.insert(names, server.name)
+    end
+    return " " .. table.concat(names, " ") .. " "
+  end,
+  hl = { fg = colors.overlay1, bold = true },
+}
+
 local FileType = {
   provider = function()
     return string.lower(vim.bo.filetype) .. " "
@@ -310,6 +324,7 @@ local Statusline = {
   { provider = "%=" },
   Diagnostics,
   { provider = "%=" },
+  LSPActive,
   {
     init = function(self)
       self.filename = vim.api.nvim_buf_get_name(0)
@@ -321,7 +336,6 @@ local Statusline = {
       hl = function(self)
         return {
           fg = self.mode_color,
-          bg = colors.surface0,
         }
       end,
     },
