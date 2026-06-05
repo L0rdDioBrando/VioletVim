@@ -1,9 +1,17 @@
+-- General
+vim.keymap.set({ "n", "v", }, "<C-s>", ":w!<cr>", { desc = "Save file" })
+vim.keymap.set("n", "<leader>u", ":lua vim.pack.update()<cr>", { desc = "Update all plugins" })
+vim.keymap.set("n", "<C-k>", ":wincmd k<cr>", { desc = "Window up" })
+vim.keymap.set("n", "<C-j>", ":wincmd j<cr>", { desc = "Window down" })
+vim.keymap.set('n', "<C-h>", ":wincmd h<cr>", { desc = "Windoww left" })
+vim.keymap.set('n', "<C-l>", ":wincmd l<cr>", { desc = "Window right" })
+vim.keymap.set("n", "<A-a>", "ggVG", { desc = "Select all" })
+vim.keymap.set("n", "T", ":terminal<cr>", { desc = "Open terminal" })
+
 -- Buffers
 vim.keymap.set("n", "<leader>bb", ":bd<cr>", { desc = "Close active buffer" })
-vim.keymap.set("n", "<leader>bd", ":Bdelete!<cr>", { desc = "Close buffer no save" })
 vim.keymap.set("n", "<leader>bh", ":bp<cr>", { desc = "Prev Buffer" })
 vim.keymap.set("n", "<leader>bl", ":bn<cr>", { desc = "Next Buffer" })
-vim.keymap.set("n", "<leader>bn", ":FzfLua buffers<cr>", { desc = "Go to ..." })
 
 -- FzfLua
 vim.keymap.set("n", "<leader>fg", ":FzfLua live_grep<cr>", { desc = "Live grep" })
@@ -11,51 +19,6 @@ vim.keymap.set("n", "<leader>fb", ":FzfLua buffers<cr>", { desc = "Find buffers"
 vim.keymap.set("n", "<leader>ff", ":FzfLua files<cr>", { desc = "Find files" })
 vim.keymap.set("n", "<leader>fr", ":FzfLua oldfiles<cr>", { desc = "Find old files" })
 vim.keymap.set("n", "<leader>fz", ":FzfLua zoxide<cr>", { desc = "Find zoxide history" })
-
--- LuaSnip
-vim.keymap.set({ "i", "s" }, "<C-k>", function()
-  if require("luasnip").expand_or_jumpable() then
-    require("luasnip").expand_or_jump()
-  end
-end, { silent = true })
-
-vim.keymap.set({ "i", "s" }, "<C-j>", function()
-  if require("luasnip").jumpable(-1) then
-    require("luasnip").jump(-1)
-  end
-end, { silent = true })
-
-vim.keymap.set({ "i", "s" }, "<C-l>", function()
-  if require("luasnip").choice_active() then
-    require("luasnip").change_choice(1)
-  end
-end, { silent = true })
-
--- Neotest
-vim.keymap.set("n", "<leader>er", function() require("neotest").run.run() end, { desc = "Run nearest test" })
-vim.keymap.set("n", "<leader>ee", function() require("neotest").run.run(vim.fn.expand("%")) end, { desc = "Run file" })
-vim.keymap.set("n", "<leader>es", function() require("neotest").summary.toggle() end, { desc = "Toggle Summary" })
-vim.keymap.set("n", "<leader>eo", function() require("neotest").output.open({ enter = true }) end,
-  { desc = "Show Output" })
-vim.keymap.set("n", "<leader>ed", function() require("neotest").diagnostic.enable() end, { desc = "Show Diagnostics" })
-
--- Dap
-vim.keymap.set("n", "<leader>dc", function() require("dap").continue() end, { desc = "Debug: Start/Continue" })
-vim.keymap.set("n", "<leader>db", function() require("dap").toggle_breakpoint() end,
-  { desc = "Debug: Toggle Breakpoint" })
-vim.keymap.set("n", "<leader>di", function() require("dap").step_into() end, { desc = "Debug: Step Into" })
-vim.keymap.set("n", "<leader>do", function() require("dap").step_over() end, { desc = "Debug: Step Over" })
-vim.keymap.set("n", "<leader>dt", function() require("dap").terminate() end, { desc = "Debug: Terminate" })
-vim.keymap.set("n", "<leader>du", function() require("dapui").toggle() end, { desc = "Debug: Toggle UI" })
-vim.keymap.set("n", "<leader>dgt", function() require("dap-go").debug_test() end, { desc = "Debug: Go Test" })
-vim.keymap.set("n", "<leader>dgl", function() require("dap-go").debug_last_test() end, { desc = "Debug: Last Go Test" })
-
--- Yanky
-vim.keymap.set({ "n", "x" }, "p", "<Plug>(YankyPutAfter)", { desc = "Put after" })
-vim.keymap.set({ "n", "x" }, "P", "<Plug>(YankyPutBefore)", { desc = "Put before" })
-vim.keymap.set("n", "<leader>yh", "<Plug>(YankyPreviousEntry)", { desc = "Previous Yank" })
-vim.keymap.set("n", "<leader>yl", "<Plug>(YankyNextEntry)", { desc = "Next Yank" })
-vim.keymap.set("n", "<leader>yy", ":YankyRingHistory<cr>", { desc = "Open yanky history" })
 
 -- Yazi
 vim.keymap.set("n", "<leader>s", ":Yazi<cr>", { desc = "Open yazi" })
@@ -77,7 +40,3 @@ vim.keymap.set("n", "<leader>tt", ":Oil --float<cr>", { desc = "Open oil float" 
 vim.keymap.set("n", "<leader>gl", "&diff ? 'gl' : ':Gitsigns next_hunk<cr>'", { expr = true, desc = "Next git hunk" })
 vim.keymap.set("n", "<leader>gg", "&diff ? 'gh' : ':Gitsigns prev_hunk<cr>'", { expr = true, desc = "Prev git hunk" })
 vim.keymap.set("n", "<leader>gu", ":Gitsigns undo_stage_hunk<cr>", { desc = "Undo stage hunk" })
-
--- Other
-vim.keymap.set({ "n", "v", }, "<C-s>", ":w!<cr>", { desc = "Save file" })                       -- Save file
-vim.keymap.set("n", "<leader>u", ":lua vim.pack.update()<cr>", { desc = "Update all plugins" }) -- Update all plugins
