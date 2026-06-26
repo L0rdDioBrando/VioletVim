@@ -150,6 +150,7 @@ local Mode = {
       V = colors.sky,
       c = colors.blue,
       t = colors.mauve,
+      r = colors.sapphire
     }
     self.mode_color = mode_colors[self.mode] or colors.lavender
   end,
@@ -164,7 +165,7 @@ local Mode = {
     end,
 
     provider = function(self)
-      return "  " .. (self.mode_names[self.mode] or "UNKNOWN") .. " "
+      return " " .. (self.mode_names[self.mode] or "UNKNOWN") .. " "
     end,
   },
 
@@ -332,7 +333,7 @@ local Statusline = {
     FileIcon,
     FileType,
     {
-      provider = "◖",
+      provider = "",
       hl = function(self)
         return {
           fg = self.mode_color,
