@@ -3,7 +3,8 @@ vim.pack.add {
   "https://github.com/brenoprata10/nvim-highlight-colors",
   "https://github.com/L3MON4D3/LuaSnip",
   "https://github.com/rafamadriz/friendly-snippets",
-  "https://github.com/saghen/blink.cmp"
+  "https://github.com/saghen/blink.cmp",
+  "https://github.com/b0o/SchemaStore.nvim"
 }
 
 local lspconfig = require("lspconfig")
@@ -16,7 +17,24 @@ lsp_defaults.capabilities = vim.tbl_deep_extend("force", lsp_defaults.capabiliti
 vim.lsp.enable("gopls")
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("jsonls")
+vim.lsp.config("jsonls", {
+  settings = {
+    json = {
+      schemas = require('schemastore').json.schemas {
+        extra = {
+          {
+            description = "sing-box",
+            fileMatch = "sing-box.json",
+            name = "sing-box.json",
+            url = "https://sing-box.sagernet.org/schema.json"
+          },
+        },
+      },
+    },
+  }
+})
 vim.lsp.enable("cssls")
 vim.lsp.enable("nixd")
 vim.lsp.enable("kdl-ls")
 vim.lsp.enable("qmlls")
+vim.lsp.enable("bashls")
