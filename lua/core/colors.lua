@@ -132,11 +132,6 @@ require("catppuccin").setup({
     NotifyTRACEIcon = { fg = colors.blue },
     NotifyTRACETitle = { fg = colors.text },
     NotifyTRACEBody = { fg = colors.lavender, bg = colors.base },
-    -- Neotest
-    NeotestFile = { fg = colors.text },
-    NeotestDir = { fg = colors.lavender, bold = true },
-    NeotestFailed = { fg = colors.red, bold = true },
-    NeotestPassed = { fg = colors.teal, bold = true }
   },
   default_integrations = false,
   auto_integrations = true,
