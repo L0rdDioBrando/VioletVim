@@ -9,279 +9,314 @@ require("nvim-web-devicons").setup({
   override = {
     md = {
       icon = "",
-      color = "#91d7e3",
+      color = colors.sky,
       name = "Markdown"
     },
     zsh = {
       icon = "",
-      color = "#b7bdf8",
+      color = colors.lavender,
       cterm_color = "65",
       name = "Zsh"
-    },
-    lua = {
-      icon = "",
-      color = "#8aadf4",
-      name = "Lua"
     },
   },
 
   override_by_filename = {
     ["LICENSE"] = {
       icon = "",
-      color = "#eed49f",
+      color = colors.yellow,
       name = "License"
     },
     ["go.mod"] = {
       icon = "",
-      color = "#c6a0f6",
+      color = colors.mauve,
       name = "GoMod"
     },
     ["go.sum"] = {
       icon = "",
-      color = "#8bd5ca",
+      color = colors.teal,
       name = "GoSum"
     },
     [".gitignore"] = {
       icon = "",
-      color = "#f5a97f",
+      color = colors.peach,
       name = "Gitignore"
+    },
+    [".gitattributes"] = {
+      icon = "",
+      color = colors.peach,
+      name = "Gitattributes"
+    },
+    ["flake.lock"] = {
+      icon = "󱄅",
+      color = colors.teal,
+      name = "Flake"
+    },
+    ["shell.nix"] = {
+      icon = "󱄅",
+      color = colors.sapphire,
+      name = "Flake"
     },
   },
 
   override_by_extension = {
     ["log"] = {
       icon = "",
-      color = "#b7bdf8",
+      color = colors.lavender,
       name = "Log"
     },
     ["go"] = {
       icon = "",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Go"
     },
     ["txt"] = {
       icon = "",
-      color = "#89b4fa",
+      color = colors.blue,
       name = "Txt"
     },
     ["py"] = {
       icon = "",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Py"
     },
     ["js"] = {
       icon = "",
-      color = "#eed49f",
+      color = colors.yellow,
       name = "Js"
     },
     ["ts"] = {
       icon = "",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Ts"
     },
     ["tsx"] = {
       icon = "",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Ts"
     },
     ["png"] = {
       icon = "",
-      color = "#b7bdf8",
+      color = colors.lavender,
       name = "Png"
     },
     ["jpg"] = {
       icon = "",
-      color = "#a6da95",
+      color = colors.green,
       name = "Jpg"
     },
     ["jpeg"] = {
       icon = "",
-      color = "#a6da95",
+      color = colors.green,
       name = "Jpeg"
     },
     ["webp"] = {
       icon = "",
-      color = "#a6da95",
+      color = colors.green,
       name = "Webp"
     },
     ["lua"] = {
       icon = "",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Lua"
     },
     ["nix"] = {
       icon = "",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Nix"
     },
     ["zip"] = {
       icon = "󰛫",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Zip"
     },
     ["tar"] = {
       icon = "󰛫",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Tar"
     },
     ["tar.gz"] = {
       icon = "󰛫",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Tar"
     },
     ["cpp"] = {
       icon = "",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Cpp"
     },
     ["c"] = {
       icon = "",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "C"
     },
     ["h"] = {
       icon = "",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "C"
     },
     ["sh"] = {
       icon = "",
-      color = "#8087a2",
+      color = colors.overlay1,
       name = "Sh"
     },
     ["css"] = {
       icon = "",
-      color = "#eed49f",
+      color = colors.yellow,
       name = "Css"
     },
     ["scss"] = {
       icon = "",
-      color = "#eed49f",
+      color = colors.yellow,
       name = "Scss"
     },
     ["blend"] = {
       icon = "",
-      color = "#eed49f",
+      color = colors.yellow,
       name = "Blender"
     },
     ["html"] = {
       icon = "",
-      color = "#f5a97f",
+      color = colors.peach,
       name = "Html"
     },
     ["mp4"] = {
       icon = "",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Mp4"
     },
     ["mp3"] = {
       icon = "󰝚",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Mp3"
+    },
+    ["flac"] = {
+      icon = "󰝚",
+      color = colors.lavender,
+      name = "Flac"
+    },
+    ["opus"] = {
+      icon = "󰝚",
+      color = colors.green,
+      name = "Opus"
     },
     ["pdf"] = {
       icon = "",
-      color = "#7dc4e4",
+      color = colors.sapphire,
       name = "Pdf"
     },
     ["svg"] = {
       icon = "",
-      color = "#ee99a0",
+      color = colors.maroon,
       name = "Svg"
     },
     ["avi"] = {
       icon = "",
-      color = "#c6a0f6",
+      color = colors.mauve,
       name = "Avi"
     },
     ["mkv"] = {
       icon = "",
-      color = "#b7bdf8",
+      color = colors.lavender,
       name = "Mkv"
     },
     ["gif"] = {
       icon = "",
-      color = "#f4dbd6",
+      color = colors.rosewater,
       name = "Gif"
     },
     ["wav"] = {
       icon = "",
-      color = "#ed8796",
+      color = colors.red,
       name = "Wav"
     },
     ["aac"] = {
       icon = "",
-      color = "#a6da95",
+      color = colors.green,
       name = "Aac"
     },
     ["rar"] = {
       icon = "󰛫",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Rar"
     },
     ["7z"] = {
       icon = "󰛫",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "7z"
     },
     ["java"] = {
       icon = "",
-      color = "#f5a97f",
+      color = colors.peach,
       name = "Java"
     },
     ["class"] = {
       icon = "",
-      color = "#f5a97f",
+      color = colors.peach,
       name = "Java"
     },
     ["jar"] = {
       icon = "",
-      color = "#f5a97f",
+      color = colors.peach,
       name = "Java"
     },
     ["war"] = {
       icon = "",
-      color = "#f5a97f",
+      color = colors.peach,
       name = "Java"
     },
     ["ear"] = {
       icon = "",
-      color = "#f5a97f",
+      color = colors.peach,
       name = "Java"
     },
     ["qml"] = {
       icon = "",
-      color = "#8bd5ca",
+      color = colors.teal,
       name = "Qml"
     },
     ["conf"] = {
       icon = "",
-      color = "#f0c6c6",
+      color = colors.flamingo,
       name = "Config"
     },
     ["json"] = {
       icon = "",
-      color = "#eed49f",
+      color = colors.yellow,
       name = "Json"
     },
     ["jsonc"] = {
       icon = "",
-      color = "#eed49f",
+      color = colors.yellow,
       name = "Json"
+    },
+    ["toml"] = {
+      icon = "",
+      color = colors.red,
+      name = "Toml"
+    },
+    ["yaml"] = {
+      icon = "",
+      color = colors.green,
+      name = "Yaml"
+    },
+    ["yml"] = {
+      icon = "",
+      color = colors.green,
+      name = "Yaml"
     },
     ["xml"] = {
       icon = "󰗀",
-      color = "#c6a0f6",
+      color = colors.mauve,
       name = "Xml"
     },
     ["ttf"] = {
       icon = "",
-      color = "#8aadf4",
+      color = colors.blue,
       name = "Ttf"
     },
     ["otf"] = {
       icon = "",
-      color = "#b7bdf8",
+      color = colors.lavender,
       name = "Otf"
     },
   },
