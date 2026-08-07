@@ -23,18 +23,9 @@ vim.keymap.set("n", "<leader>fz", ":FzfLua zoxide<cr>", { desc = "Find zoxide hi
 -- Yazi
 vim.keymap.set("n", "<leader>s", ":Yazi<cr>", { desc = "Open yazi" })
 
--- Aerial
-vim.keymap.set("n", "<leader>aa", ":AerialOpen<cr>", { desc = "Toggle aerial" })
-vim.keymap.set("n", "<leader>af", ":AerialNavToggle<cr>", { desc = "Open/Close aerial float" })
-vim.keymap.set("n", "<leader>as", function()
-  require("aerial").fzf_lua_picker({
-    profile = "ivy",
-  })
-end, { desc = "Aerial Search" })
-
 -- Oil
-vim.keymap.set("n", "<leader>tr", ":Oil<cr>", { desc = "Open oil.nvim" })
-vim.keymap.set("n", "<leader>tt", ":Oil --float<cr>", { desc = "Open oil float" })
+vim.keymap.set("n", "<leader>tt", ":Oil<cr>", { desc = "Open oil.nvim" })
+vim.keymap.set("n", "<leader>tf", ":Oil --float<cr>", { desc = "Open oil float" })
 
 -- Gitsigns
 vim.keymap.set("n", "<leader>gl", "&diff ? 'gl' : ':Gitsigns next_hunk<cr>'", { expr = true, desc = "Next git hunk" })
