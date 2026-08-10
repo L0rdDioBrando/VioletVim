@@ -82,8 +82,6 @@ require("catppuccin").setup({
     Pmenu = { bg = colors.mantle, fg = colors.lavender },
     FloatTitle = { bg = colors.base, fg = colors.lavender },
     Directory = { fg = colors.lavender },
-    -- Mini.files
-    MiniFilesDirectory = { fg = colors.lavender },
     -- Which-Key
     WhichKeyBorder = { fg = colors.lavender },
     -- Fzf-Lua
@@ -93,8 +91,6 @@ require("catppuccin").setup({
     BlinkIndent = { fg = colors.surface1 },
     BlinkIndentViolet = { fg = colors.lavender },
     BlinkCmpMenuBorder = { fg = colors.lavender },
-    -- Mason
-    MasonHighlightBlock = { bg = colors.lavender, fg = colors.base },
     -- Heirline
     TabLineFill = { bg = colors.crust },
     -- Noice
@@ -136,10 +132,6 @@ require("catppuccin").setup({
   default_integrations = false,
   auto_integrations = true,
   integrations = {
-    blink_cmp = {
-      style = "bordered",
-    },
-    notify = false,
     native_lsp = {
       enabled = true,
       underlines = { errors = { "undercurl" } },
