@@ -28,6 +28,18 @@ vim.schedule(function()
       i(1, ""),
       t({ "", "  ];", "", "  shellHook = ''", "    " }), i(0),
       t({ "", "  '';", "}" })
+    }),
+    s("derivation", {
+      t({ "stdenv.mkDerivation rec {", '  pname = "' }), i(1, "name"),
+      t({ '";', '  version = "' }), i(2, "0.1.0"),
+      t({ '";', "", "  src = " }), i(3, "./."),
+      t({ ";", "", "  nativeBuildInputs = [ " }), i(4),
+      t({ " ];", "  buildInputs = [ " }), i(5),
+      t({ " ];", "", "  meta = with lib; {", '    description = "' }), i(6, "description"),
+      t({ '";', '    homepage = "' }), i(7, "https://example.com"),
+      t({ '";', "    license = licenses." }), i(8, "mit"),
+      t({ ";", "    maintainers = with maintainers; [ " }), i(0),
+      t({ " ];", "  };", "}" })
     })
   })
 end)
