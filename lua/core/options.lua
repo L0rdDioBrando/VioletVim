@@ -27,7 +27,7 @@ vim.g.vim_pack_job_threads = 50 -- Fast plugins update
 vim.opt.equalalways = false     -- Idk
 
 vim.opt.timeout = true          -- Timeout
-vim.opt.timeoutlen = 100
+vim.opt.timeoutlen = 1000
 
 vim.opt.clipboard = "unnamedplus" -- Clipboard
 
