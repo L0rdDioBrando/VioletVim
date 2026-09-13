@@ -57,3 +57,6 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 
 vim.opt.undofile = true
+
+vim.g.loaded_netrw = 1 -- Disable netrw
+vim.g.loaded_netrwPlugin = 1
