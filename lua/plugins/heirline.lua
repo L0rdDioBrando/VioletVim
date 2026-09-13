@@ -139,19 +139,19 @@ local BufferLine = {
 }
 
 -- Statusline
+local mode_colors = {
+  n = colors.lavender,
+  i = colors.teal,
+  v = colors.sky,
+  V = colors.sky,
+  c = colors.blue,
+  t = colors.mauve,
+  r = colors.sapphire
+}
+
 local Mode = {
   init = function(self)
     self.mode = vim.fn.mode(1):sub(1, 1)
-
-    local mode_colors = {
-      n = colors.lavender,
-      i = colors.teal,
-      v = colors.sky,
-      V = colors.sky,
-      c = colors.blue,
-      t = colors.mauve,
-      r = colors.sapphire
-    }
     self.mode_color = mode_colors[self.mode] or colors.lavender
   end,
 
@@ -219,7 +219,7 @@ local Diagnostics = {
   static = {
     error_icon = "  ",
     warn_icon = "  ",
-    hint_icon = " 󰧟 ",
+    hint_icon = "  ",
   },
 
   init = function(self)
@@ -274,14 +274,6 @@ local FileType = {
 local FileName = {
   init = function(self)
     local mode = vim.fn.mode(1):sub(1, 1)
-    local mode_colors = {
-      n = colors.lavender,
-      i = colors.teal,
-      v = colors.sky,
-      V = colors.sky,
-      c = colors.blue,
-      t = colors.mauve,
-    }
     self.mode_color = mode_colors[mode] or colors.lavender
   end,
 
@@ -308,14 +300,6 @@ local Statusline = {
 
   init = function(self)
     local mode = vim.fn.mode(1):sub(1, 1)
-    local mode_colors = {
-      n = colors.lavender,
-      i = colors.teal,
-      v = colors.sky,
-      V = colors.sky,
-      c = colors.blue,
-      t = colors.mauve,
-    }
     self.mode_color = mode_colors[mode] or colors.lavender
   end,
 
