@@ -49,3 +49,43 @@ Install my dotfiles:
 ```sh
 git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.conifg/nvim
 ```
+
+## Structure
+
+```
+.
+├── assets
+│   ├── screen1.png
+│   ├── screen2.png
+│   ├── screen3.png
+│   └── screen4.png
+├── init.lua
+├── LICENSE
+├── lua
+│   ├── core
+│   │   ├── colors.lua
+│   │   ├── keymaps.lua
+│   │   └── options.lua
+│   └── plugins
+│       ├── autopairs.lua
+│       ├── blink-cmp.lua
+│       ├── blink-indent.lua
+│       ├── conform.lua
+│       ├── fzf.lua
+│       ├── gitsigns.lua
+│       ├── heirline.lua
+│       ├── highlight-colors.lua
+│       ├── lsp-config.lua
+│       ├── luasnip.lua
+│       ├── noice.lua
+│       ├── notify.lua
+│       ├── nvim-lint.lua
+│       ├── nvim-web-devicons.lua
+│       ├── oil.lua
+│       ├── surround.lua
+│       ├── tsm.lua
+│       ├── which-key.lua
+│       └── yazi.lua
+├── nvim-pack-lock.json
+└── README.md
+```
