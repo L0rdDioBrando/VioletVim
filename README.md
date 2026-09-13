@@ -68,20 +68,19 @@ git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.conifg/nvim
 │       ├── autopairs.lua
 │       ├── blink-cmp.lua
 │       ├── blink-indent.lua
+│       ├── colorizer.lua
 │       ├── conform.lua
 │       ├── fzf.lua
 │       ├── gitsigns.lua
 │       ├── heirline.lua
-│       ├── highlight-colors.lua
 │       ├── lsp-config.lua
 │       ├── luasnip.lua
-│       ├── noice.lua
 │       ├── notify.lua
 │       ├── nvim-lint.lua
 │       ├── nvim-web-devicons.lua
 │       ├── oil.lua
 │       ├── surround.lua
-│       ├── tsm.lua
+│       ├── treesitter.lua
 │       ├── which-key.lua
 │       └── yazi.lua
 ├── nvim-pack-lock.json
