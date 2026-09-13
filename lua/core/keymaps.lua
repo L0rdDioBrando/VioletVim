@@ -1,5 +1,5 @@
 -- General
-vim.keymap.set({ "n", "v", }, "<C-s>", ":w!<cr>", { desc = "Save file" })
+vim.keymap.set("n", "<C-s>", ":w!<cr>", { desc = "Save file" })
 vim.keymap.set("n", "<leader>u", ":lua vim.pack.update()<cr>", { desc = "Update all plugins" })
 vim.keymap.set("n", "<C-k>", ":wincmd k<cr>", { desc = "Window up" })
 vim.keymap.set("n", "<C-j>", ":wincmd j<cr>", { desc = "Window down" })
@@ -12,6 +12,10 @@ vim.keymap.set("n", "T", ":terminal<cr>", { desc = "Open terminal" })
 vim.keymap.set("n", "<leader>bb", ":bd<cr>", { desc = "Close active buffer" })
 vim.keymap.set("n", "<leader>bh", ":bp<cr>", { desc = "Prev Buffer" })
 vim.keymap.set("n", "<leader>bl", ":bn<cr>", { desc = "Next Buffer" })
+
+-- LuaSnip
+vim.keymap.set({ "i", "s" }, "<A-l>", function() require("luasnip").jump(1) end, { silent = true })
+vim.keymap.set({ "i", "s" }, "<A-h>", function() require("luasnip").jump(-1) end, { silent = true })
 
 -- FzfLua
 vim.keymap.set("n", "<leader>fg", ":FzfLua live_grep<cr>", { desc = "Live grep" })
