@@ -13,9 +13,6 @@ require("fzf-lua").setup {
     border = "rounded",
     backdrop = 60
   },
-  files = {
-    previewer = "bat"
-  },
   fzf_opts = {
     ["--color"] = table.concat({
       "fg:" .. colors.text,
@@ -39,11 +36,5 @@ require("fzf-lua").setup {
     preview_border = "FzfLuaBorder",
     scrollbar_f = "PmenuSel",
     scrollbar_e = "PmenuSbar"
-  },
-  previewers = {
-    bat = {
-      cmd  = "bat",
-      args = "--color=always --style=numbers,changes"
-    },
   }
 }

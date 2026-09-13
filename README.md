@@ -23,8 +23,6 @@ yazi (My config see [here](https://github.com/L0rdDioBrando/violet-dots/tree/mai
 
 clang *or* gcc,
 
-bat ([catppuccin-macchiato](https://github.com/catppuccin/bat/blob/main/themes/Catppuccin%20Macchiato.tmTheme) In the screenshot),
-
 fzf,
 
 rg,
