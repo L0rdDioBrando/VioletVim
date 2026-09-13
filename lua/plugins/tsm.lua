@@ -15,8 +15,9 @@ require("tree-sitter-manager").setup({
     "bash",
     "regex",
     "c"
-  }, -- TODO: Add more languages
+  }, -- Add more languages
   border = "rounded",
   auto_install = true,
+  nerdfont = true,
   highlight = true
 })
