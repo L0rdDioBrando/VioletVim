@@ -17,21 +17,13 @@ lsp_defaults.capabilities = vim.tbl_deep_extend("force", lsp_defaults.capabiliti
 vim.lsp.enable("gopls")
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("jsonls")
-vim.lsp.config("jsonls", {
+vim.lsp.config('jsonls', {
   settings = {
     json = {
-      schemas = require('schemastore').json.schemas {
-        extra = {
-          {
-            description = "sing-box",
-            fileMatch = "sing-box.json",
-            name = "sing-box.json",
-            url = "https://sing-box.sagernet.org/schema.json"
-          },
-        },
-      },
+      schemas = require('schemastore').json.schemas(),
+      validate = { enable = true },
     },
-  }
+  },
 })
 vim.lsp.enable("cssls")
 vim.lsp.enable("nixd")
