@@ -93,16 +93,6 @@ require("catppuccin").setup({
     BlinkCmpMenuBorder = { fg = colors.lavender },
     -- Heirline
     TabLineFill = { bg = colors.crust },
-    -- Noice
-    NoiceCmdlinePopupBorder = { fg = colors.lavender },
-    NoiceCmdlineIcon = { fg = colors.lavender },
-    NoiceCmdlinePopupTitle = { fg = colors.lavender, bold = true },
-    NoiceCmdlinePopupBorderSearch = { fg = colors.green },
-    NoiceCmdlineIconSearch = { fg = colors.green },
-    NoiceCmdlinePopupBorderLua = { fg = colors.mauve },
-    NoiceCmdlineIconLua = { fg = colors.mauve },
-    NoiceCmdlinePopup = { bg = colors.mantle },
-    NoiceConfirmBorder = { fg = colors.blue },
     -- Notify
     NotifyERRORBorder = { fg = colors.red },
     NotifyERRORIcon = { fg = colors.red },
