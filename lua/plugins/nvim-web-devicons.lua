@@ -117,7 +117,7 @@ require("nvim-web-devicons").setup({
     ["lua"] = {
       icon = "",
       color = colors.blue,
-      name = "Lua"
+      name = "DevLua"
     },
     ["nix"] = {
       icon = "",
