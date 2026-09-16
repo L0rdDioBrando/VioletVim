@@ -8,7 +8,6 @@ require("nvim-treesitter").install {
   "lua",
   "nix",
   "json",
-  "jsonc",
   "kdl",
   "css",
   "markdown",
