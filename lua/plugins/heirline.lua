@@ -156,6 +156,16 @@ local Mode = {
   end,
 
   {
+    provider = "",
+    hl = function(self)
+      return {
+        fg = self.mode_color,
+      }
+    end,
+  },
+
+
+  {
     hl = function(self)
       return {
         fg = colors.base,
@@ -174,6 +184,7 @@ local Mode = {
     hl = function(self)
       return {
         fg = self.mode_color,
+        bg = colors.surface0
       }
     end,
   },
@@ -209,8 +220,27 @@ local Git = {
 }
 
 local Ruler = {
-  provider = " %P %l:%c",
-  hl = { fg = colors.overlay1 },
+  init = function(self)
+    self.mode = vim.fn.mode(1):sub(1, 1)
+    self.mode_color = mode_colors[self.mode] or colors.lavender
+  end,
+  {
+    provider = " %P %l:%c ",
+    hl = function(self)
+      return {
+        fg = self.mode_color,
+        bg = colors.surface0
+      }
+    end,
+  },
+  {
+    provider = "",
+    hl = function()
+      return {
+        fg = colors.surface0
+      }
+    end,
+  }
 }
 
 local Diagnostics = {
@@ -276,36 +306,48 @@ local FileName = {
     local mode = vim.fn.mode(1):sub(1, 1)
     self.mode_color = mode_colors[mode] or colors.lavender
   end,
-
-  provider = function(self)
-    local filename = vim.fn.fnamemodify(self.filename, ":.")
-    if filename == "" or filename == " " then return "[No Name]" end
-    if not conditions.width_percent_below(#filename, 0.25) then
-      filename = vim.fn.pathshorten(filename)
-    end
-    return " " .. filename .. " "
-  end,
-
-  hl = function(self)
-    return {
-      bg = self.mode_color,
-      fg = colors.base,
-      bold = true,
-    }
-  end,
+  {
+    provider = "",
+    hl = function(self)
+      return {
+        fg = self.mode_color,
+        bg = colors.mantle
+      }
+    end,
+  },
+  {
+    provider = function(self)
+      local filename = vim.fn.fnamemodify(self.filename, ":.")
+      if filename == "" or filename == " " then return " [No Name] " end
+      if not conditions.width_percent_below(#filename, 0.25) then
+        filename = vim.fn.pathshorten(filename)
+      end
+      return " " .. filename .. " "
+    end,
+    hl = function(self)
+      return {
+        bg = self.mode_color,
+        fg = colors.base,
+        bold = true,
+      }
+    end,
+  },
+  {
+    provider = "",
+    hl = function(self)
+      return {
+        fg = self.mode_color,
+        bg = colors.mantle
+      }
+    end,
+  },
 }
 
 local Statusline = {
-  hl = { bg = colors.surface0 },
-
-  init = function(self)
-    local mode = vim.fn.mode(1):sub(1, 1)
-    self.mode_color = mode_colors[mode] or colors.lavender
-  end,
-
+  hl = { bg = colors.mantle },
   Mode,
-  Git,
   Ruler,
+  Git,
   { provider = "%=" },
   Diagnostics,
   { provider = "%=" },
@@ -316,15 +358,7 @@ local Statusline = {
     end,
     FileIcon,
     FileType,
-    {
-      provider = "",
-      hl = function(self)
-        return {
-          fg = self.mode_color,
-        }
-      end,
-    },
-    FileName,
+    FileName
   }
 }
 
