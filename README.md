@@ -13,27 +13,27 @@
 
 ## Requirements:
 
-Neovim 0.12+,
+[Neovim 0.12+](https://neovim.io/),
 
-git,
+[git](https://git-scm.com/),
 
-tree-sitter CLI,
+[tree-sitter CLI](https://tree-sitter.github.io/tree-sitter/),
 
-yazi (My config see [here](https://github.com/L0rdDioBrando/violet-dots/tree/main/modules/configs/yazi)),
+[yazi](https://yazi-rs.github.io/) (My config see [here](https://github.com/L0rdDioBrando/violet-dots/tree/main/modules/configs/yazi)),
 
-clang *or* gcc,
+[clang](https://clang.llvm.org/) *or* [gcc](https://gcc.gnu.org/),
 
-fzf,
+[fzf](https://github.com/junegunn/fzf),
 
-rg,
+[rg](https://github.com/burntsushi/ripgrep),
 
-zoxide,
+[zoxide](https://github.com/ajeetdsouza/zoxide),
 
-fd,
+[fd](https://github.com/sharkdp/fd),
 
-cargo,
+[Rust toolchain](https://rustup.rs/),
 
-Nerd Fonts (FiraCode in the screenshot)
+[Nerd Font](https://www.nerdfonts.com/) ([FiraCode](https://github.com/tonsky/firacode) in the screenshot)
 
 ---
 
