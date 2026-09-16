@@ -31,6 +31,8 @@ zoxide,
 
 fd,
 
+cargo,
+
 Nerd Fonts (FiraCode in the screenshot)
 
 ---
