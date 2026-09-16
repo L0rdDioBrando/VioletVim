@@ -11,7 +11,8 @@ require("conform").setup({
     json = { "jq" },
     jsonc = { "jq" },
     kdl = { "kdlfmt" },
-    bash = { "shfmt" }
+    bash = { "shfmt" },
+    markdown = { "markdownfmt" }
   },
   format_on_save = {
     timeout_ms = 500,

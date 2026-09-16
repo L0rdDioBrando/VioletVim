@@ -1,7 +1,6 @@
 vim.pack.add { "https://github.com/mfussenegger/nvim-lint" }
 
 require("lint").linters_by_ft = {
-  markdown = { "vale" },
   go = { "golangcilint" },
   sh = { 'shellcheck' },
   zsh = { "zsh" },
@@ -13,4 +12,5 @@ require("lint").linters_by_ft = {
   lua = { "stylua" },
   javascript = { "eslint_d" },
   nix = { "statix" },
+  markdown = { "markdownlint-cli2" },
 }
