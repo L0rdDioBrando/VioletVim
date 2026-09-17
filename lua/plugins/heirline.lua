@@ -168,7 +168,7 @@ local Mode = {
   {
     hl = function(self)
       return {
-        fg = colors.base,
+        fg = colors.mantle,
         bg = self.mode_color,
         bold = true,
       }
@@ -291,7 +291,7 @@ local LSPActive = {
     end
     return " " .. table.concat(names, " ") .. " "
   end,
-  hl = { fg = colors.overlay1, bold = true },
+  hl = { fg = colors.overlay1 },
 }
 
 local FileType = {
@@ -308,9 +308,9 @@ local FileName = {
   end,
   {
     provider = "",
-    hl = function(self)
+    hl = function()
       return {
-        fg = self.mode_color,
+        fg = colors.surface0,
         bg = colors.mantle
       }
     end,
@@ -326,11 +326,46 @@ local FileName = {
     end,
     hl = function(self)
       return {
-        bg = self.mode_color,
-        fg = colors.base,
+        fg = self.mode_color,
+        bg = colors.surface0,
         bold = true,
       }
     end,
+  },
+}
+
+local WorkDir = {
+  init = function(self)
+    local mode = vim.fn.mode(1):sub(1, 1)
+    self.mode_color = mode_colors[mode] or colors.lavender
+  end,
+  {
+    provider = "",
+    hl = function(self)
+      return {
+        fg = self.mode_color,
+        bg = colors.surface0
+      }
+    end,
+  },
+  {
+    provider = function()
+      local icon = " " .. " "
+      local cwd = vim.fn.getcwd(0)
+      cwd = vim.fn.fnamemodify(cwd, ":~")
+      if not conditions.width_percent_below(#cwd, 0.25) then
+        cwd = vim.fn.pathshorten(cwd)
+      end
+      local trail = cwd:sub(-1) == '/ ' and '' or "/ "
+      return icon .. cwd .. trail
+    end,
+    hl = function(self)
+      return {
+        fg = colors.mantle,
+        bg = self.mode_color,
+        bold = true
+      }
+    end
   },
   {
     provider = "",
@@ -358,7 +393,8 @@ local Statusline = {
     end,
     FileIcon,
     FileType,
-    FileName
+    FileName,
+    WorkDir
   }
 }
 
