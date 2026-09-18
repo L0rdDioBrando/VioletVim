@@ -19,7 +19,7 @@
 
 - [tree-sitter CLI](https://tree-sitter.github.io/tree-sitter/)
 
-- [yazi](https://yazi-rs.github.io/) (Optional, my config see [here](https://github.com/L0rdDioBrando/violet-dots/tree/main/modules/configs/yazi))
+- [yazi](https://yazi-rs.github.io/) (Optional, my config see [here](https://github.com/L0rdDioBrando/violet-dots/tree/main/nixos/home-manager/configs/yazi))
 
 - [clang](https://clang.llvm.org/) *or* [gcc](https://gcc.gnu.org/)
 
