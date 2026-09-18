@@ -13,42 +13,76 @@
 
 ## Requirements:
 
-[Neovim 0.12+](https://neovim.io/),
+- [Neovim 0.12+](https://neovim.io/)
 
-[git](https://git-scm.com/),
+- [git](https://git-scm.com/)
 
-[tree-sitter CLI](https://tree-sitter.github.io/tree-sitter/),
+- [tree-sitter CLI](https://tree-sitter.github.io/tree-sitter/)
 
-[yazi](https://yazi-rs.github.io/) (My config see [here](https://github.com/L0rdDioBrando/violet-dots/tree/main/modules/configs/yazi)),
+- [yazi](https://yazi-rs.github.io/) (Optional, my config see [here](https://github.com/L0rdDioBrando/violet-dots/tree/main/modules/configs/yazi))
 
-[clang](https://clang.llvm.org/) *or* [gcc](https://gcc.gnu.org/),
+- [clang](https://clang.llvm.org/) *or* [gcc](https://gcc.gnu.org/)
 
-[fzf](https://github.com/junegunn/fzf),
+- [fzf](https://github.com/junegunn/fzf)
 
-[rg](https://github.com/burntsushi/ripgrep),
+- [rg](https://github.com/burntsushi/ripgrep)
 
-[zoxide](https://github.com/ajeetdsouza/zoxide),
+- [zoxide](https://github.com/ajeetdsouza/zoxide)
 
-[fd](https://github.com/sharkdp/fd),
+- [fd](https://github.com/sharkdp/fd)
 
-[Rust toolchain](https://rustup.rs/),
+- [Rust toolchain](https://rustup.rs/)
 
-[Nerd Font](https://www.nerdfonts.com/) ([FiraCode](https://github.com/tonsky/firacode) in the screenshot)
+- [Nerd Font](https://www.nerdfonts.com/) ([FiraCode](https://github.com/tonsky/firacode) in the screenshot)
 
 ---
 
 ## Install:
 
-Make backup your configs:
+Backup your config:
 
-```sh
+```bash
 mv ~/.config/nvim ~/.config/nvim.back
 ```
 Install my dotfiles:
 
-```sh
-git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.conifg/nvim
+```bash
+git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.config/nvim
 ```
+
+## Plugins
+
+- Package manager: [Pack](https://neovim.io/doc/user/pack/)
+
+- Completion: [blink.cmp](https://github.com/saghen/blink.cmp)
+
+- File managers: [oil.nvim](https://github.com/stevearc/oil.nvim) & [yazi.nvim](https://github.com/mikavilpas/yazi.nvim)
+
+- Find files: [fzf-lua](https://github.com/ibhagwan/fzf-lua)
+
+- Colorscheme: [catppuccin-macchiato](https://github.com/catppuccin/nvim)
+
+- Statusline & bufferline: [heirline.nvim](https://github.com/rebelot/heirline.nvim)
+
+- Pairs: [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+
+- Git integration: [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+
+- Formatters, LSP & Linters: [conform.nvim](https://github.com/stevearc/conform.nvim) [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) & [nvim-lint](https://github.com/mfussenegger/nvim-lint)
+
+- Indent: [blink.indent](https://github.com/saghen/blink.indent)
+
+- Snippets: [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+
+- Highlighting: [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+
+- Colors highlight: [nvim-colorizer.lua](https://github.com/catgoose/nvim-colorizer.lua)
+
+- Others:
+  - [nvim-notify](https://github.com/rcarriga/nvim-notify)
+  - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
+  - [nvim-surround](https://github.com/kylechui/nvim-surround)
+  - [which-key.nvim](https://github.com/folke/which-key.nvim)
 
 ## Structure
 
