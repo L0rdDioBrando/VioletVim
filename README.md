@@ -1,6 +1,4 @@
-# VioletVim
-
----
+# <p align="center"> VioletVim
 
 <p align="center">
   <img src="./assets/screen1.png" width="49%">
@@ -8,8 +6,6 @@
   <img src="./assets/screen3.png" width="49%">
   <img src="./assets/screen4.png" width="49%">
 </p>
-
----
 
 ## Requirements:
 
@@ -34,8 +30,6 @@
 - [Rust toolchain](https://rustup.rs/)
 
 - [Nerd Font](https://www.nerdfonts.com/) ([FiraCode](https://github.com/tonsky/firacode) in the screenshot)
-
----
 
 ## Install:
 
