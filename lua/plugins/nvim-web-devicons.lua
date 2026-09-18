@@ -7,11 +7,6 @@ require("nvim-web-devicons").setup({
   variant = "dark",
 
   override = {
-    md = {
-      icon = "",
-      color = colors.sky,
-      name = "Markdown"
-    },
     zsh = {
       icon = "",
       color = colors.lavender,
@@ -318,6 +313,11 @@ require("nvim-web-devicons").setup({
       icon = "",
       color = colors.lavender,
       name = "Otf"
+    },
+    ["md"] = {
+      icon = "",
+      color = colors.text,
+      name = "Md"
     },
   },
 })
