@@ -50,7 +50,7 @@ Install my dotfiles:
 git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.config/nvim
 ```
 
-## Plugins
+## Plugins:
 
 - Package manager: [Pack](https://neovim.io/doc/user/pack/)
 
@@ -84,7 +84,7 @@ git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.config/nvim
   - [nvim-surround](https://github.com/kylechui/nvim-surround)
   - [which-key.nvim](https://github.com/folke/which-key.nvim)
 
-## Structure
+## Structure:
 
 ```
 .
