@@ -150,16 +150,12 @@ local mode_colors = {
 }
 
 local Mode = {
-  init = function(self)
-    self.mode = vim.fn.mode(1):sub(1, 1)
-    self.mode_color = mode_colors[self.mode] or colors.lavender
-  end,
-
   {
     provider = "",
     hl = function(self)
       return {
         fg = self.mode_color,
+        bg = colors.base
       }
     end,
   },
@@ -220,10 +216,6 @@ local Git = {
 }
 
 local Ruler = {
-  init = function(self)
-    self.mode = vim.fn.mode(1):sub(1, 1)
-    self.mode_color = mode_colors[self.mode] or colors.lavender
-  end,
   {
     provider = " %P %l:%c ",
     hl = function(self)
@@ -302,10 +294,6 @@ local FileType = {
 }
 
 local FileName = {
-  init = function(self)
-    local mode = vim.fn.mode(1):sub(1, 1)
-    self.mode_color = mode_colors[mode] or colors.lavender
-  end,
   {
     provider = "",
     hl = function()
@@ -335,10 +323,6 @@ local FileName = {
 }
 
 local WorkDir = {
-  init = function(self)
-    local mode = vim.fn.mode(1):sub(1, 1)
-    self.mode_color = mode_colors[mode] or colors.lavender
-  end,
   {
     provider = "",
     hl = function(self)
@@ -372,13 +356,17 @@ local WorkDir = {
     hl = function(self)
       return {
         fg = self.mode_color,
-        bg = colors.mantle
+        bg = colors.base
       }
     end,
   },
 }
 
 local Statusline = {
+  init = function(self)
+    self.mode = vim.fn.mode(1):sub(1, 1)
+    self.mode_color = mode_colors[self.mode] or colors.lavender
+  end,
   hl = { bg = colors.mantle },
   Mode,
   Ruler,
