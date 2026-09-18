@@ -79,7 +79,6 @@ git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.config/nvim
 - Colors highlight: [nvim-colorizer.lua](https://github.com/catgoose/nvim-colorizer.lua)
 
 - Others:
-  - [nvim-notify](https://github.com/rcarriga/nvim-notify)
   - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
   - [nvim-surround](https://github.com/kylechui/nvim-surround)
   - [which-key.nvim](https://github.com/folke/which-key.nvim)
@@ -111,7 +110,6 @@ git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.config/nvim
 │       ├── heirline.lua
 │       ├── lsp-config.lua
 │       ├── luasnip.lua
-│       ├── notify.lua
 │       ├── nvim-lint.lua
 │       ├── nvim-web-devicons.lua
 │       ├── oil.lua

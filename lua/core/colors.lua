@@ -36,31 +36,6 @@ require("catppuccin").setup({
     BlinkCmpMenuBorder = { fg = colors.lavender },
     -- Heirline
     TabLineFill = { bg = colors.crust },
-    -- Notify
-    NotifyERRORBorder = { fg = colors.red },
-    NotifyERRORIcon = { fg = colors.red },
-    NotifyERRORTitle = { fg = colors.text },
-    NotifyERRORBody = { fg = colors.lavender, bg = colors.base },
-    -- Warning
-    NotifyWARNBorder = { fg = colors.yellow },
-    NotifyWARNIcon = { fg = colors.yellow },
-    NotifyWARNTitle = { fg = colors.text },
-    NotifyWARNBody = { fg = colors.lavender, bg = colors.base },
-    -- Info
-    NotifyINFOBorder = { fg = colors.lavender },
-    NotifyINFOIcon = { fg = colors.lavender },
-    NotifyINFOTitle = { fg = colors.text },
-    NotifyINFOBody = { fg = colors.lavender, bg = colors.base },
-    -- Debug
-    NotifyDEBUGBorder = { fg = colors.mauve },
-    NotifyDEBUGIcon = { fg = colors.mauve },
-    NotifyDEBUGTitle = { fg = colors.text },
-    NotifyDEBUGBody = { fg = colors.lavender, bg = colors.base },
-    -- Trace
-    NotifyTRACEBorder = { fg = colors.blue },
-    NotifyTRACEIcon = { fg = colors.blue },
-    NotifyTRACETitle = { fg = colors.text },
-    NotifyTRACEBody = { fg = colors.lavender, bg = colors.base },
   },
   auto_integrations = true,
   integrations = {
