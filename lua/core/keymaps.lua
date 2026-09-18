@@ -28,8 +28,7 @@ vim.keymap.set("n", "<leader>fz", ":FzfLua zoxide<cr>", { desc = "Find zoxide hi
 vim.keymap.set("n", "<leader>s", ":Yazi<cr>", { desc = "Open yazi" })
 
 -- Oil
-vim.keymap.set("n", "<leader>tt", ":Oil<cr>", { desc = "Open oil.nvim" })
-vim.keymap.set("n", "<leader>tf", ":Oil --float<cr>", { desc = "Open oil float" })
+vim.keymap.set("n", "<leader>t", ":Oil<cr>", { desc = "Open oil.nvim" })
 
 -- Gitsigns
 vim.keymap.set("n", "<leader>gl", "&diff ? 'gl' : ':Gitsigns next_hunk<cr>'", { expr = true, desc = "Next git hunk" })
