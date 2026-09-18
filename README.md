@@ -68,7 +68,7 @@ git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.config/nvim
 
 - Git integration: [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 
-- Formatters, LSP & Linters: [conform.nvim](https://github.com/stevearc/conform.nvim) [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) & [nvim-lint](https://github.com/mfussenegger/nvim-lint)
+- Formatters, LSP & Linters: [conform.nvim](https://github.com/stevearc/conform.nvim), [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) & [nvim-lint](https://github.com/mfussenegger/nvim-lint)
 
 - Indent: [blink.indent](https://github.com/saghen/blink.indent)
 
