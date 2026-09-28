@@ -15,7 +15,6 @@ require("plugins.luasnip")
 require("plugins.nvim-web-devicons")
 require("plugins.oil")
 require("plugins.treesitter")
-require("plugins.which-key")
 require("plugins.nvim-lint")
 require("plugins.surround")
 

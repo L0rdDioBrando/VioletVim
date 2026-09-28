@@ -23,7 +23,7 @@ vim.opt.cursorline = true       -- Highlight current line
 vim.g.vim_pack_job_threads = 50 -- Fast plugins update
 
 vim.opt.timeout = true          -- Timeout
-vim.opt.timeoutlen = 1000
+vim.opt.timeoutlen = 1500
 
 vim.opt.clipboard = "unnamedplus" -- Use system clipboard
 

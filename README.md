@@ -15,8 +15,6 @@
 
 - [tree-sitter CLI](https://tree-sitter.github.io/tree-sitter/)
 
-- [yazi](https://yazi-rs.github.io/) (Optional, my config see [here](https://github.com/L0rdDioBrando/violet-dots/tree/main/nixos/home-manager/configs/yazi))
-
 - [clang](https://clang.llvm.org/) *or* [gcc](https://gcc.gnu.org/)
 
 - [fzf](https://github.com/junegunn/fzf)
@@ -50,7 +48,7 @@ git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.config/nvim
 
 - Completion: [blink.cmp](https://github.com/saghen/blink.cmp)
 
-- File managers: [oil.nvim](https://github.com/stevearc/oil.nvim) & [yazi.nvim](https://github.com/mikavilpas/yazi.nvim)
+- File manager: [oil.nvim](https://github.com/stevearc/oil.nvim)
 
 - Find files: [fzf-lua](https://github.com/ibhagwan/fzf-lua)
 
@@ -75,8 +73,6 @@ git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.config/nvim
 - Others:
   - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
   - [nvim-surround](https://github.com/kylechui/nvim-surround)
-  - [which-key.nvim](https://github.com/folke/which-key.nvim)
-
 ## Structure:
 
 ```
@@ -108,9 +104,6 @@ git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.config/nvim
 │       ├── nvim-web-devicons.lua
 │       ├── oil.lua
 │       ├── surround.lua
-│       ├── treesitter.lua
-│       ├── which-key.lua
-│       └── yazi.lua
-├── nvim-pack-lock.json
+│       └── treesitter.lua
 └── README.md
 ```
