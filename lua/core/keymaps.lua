@@ -23,6 +23,11 @@ vim.keymap.set("n", "<leader>fb", ":FzfLua buffers<cr>", { desc = "Find buffers"
 vim.keymap.set("n", "<leader>ff", ":FzfLua files<cr>", { desc = "Find files" })
 vim.keymap.set("n", "<leader>fr", ":FzfLua oldfiles<cr>", { desc = "Find old files" })
 vim.keymap.set("n", "<leader>fz", ":FzfLua zoxide<cr>", { desc = "Find zoxide history" })
+vim.keymap.set("n", "<F1>", function()
+  require('fzf-lua').keymaps({
+    query = "<Space>"
+  })
+end, { desc = "Find keymaps" })
 
 -- Oil
 vim.keymap.set("n", "<leader>t", ":Oil<cr>", { desc = "Open oil.nvim" })
