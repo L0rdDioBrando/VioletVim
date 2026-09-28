@@ -1,8 +1,8 @@
 vim.schedule(function()
-  vim.pack.add {
+  vim.pack.add({
     "https://github.com/L3MON4D3/LuaSnip",
     "https://github.com/rafamadriz/friendly-snippets"
-  }
+  })
 
   require("luasnip.loaders.from_vscode").lazy_load()
 
@@ -73,7 +73,7 @@ vim.schedule(function()
       t({ "      devShells = forEachSupportedSystem (", "" }),
       t({ "        { pkgs }: {", "" }),
       t({ "          default = pkgs.mkShell {", "" }),
-      t({ "            packages = with pkgs; [ " }), i(2), t({ "];", "" }),
+      t({ "            packages = with pkgs; [ " }), i(2), t({ " ];", "" }),
       t({ '            shellHook = "' }), i(3), t({ '";', "" }),
       t({ "          };", "" }),
       t({ "        }", "" }),
