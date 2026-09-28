@@ -18,18 +18,14 @@ vim.opt.smartcase = true
 vim.opt.number = true -- Make line numbers default
 vim.opt.relativenumber = true
 
-vim.opt.cursorline = true -- Highlight current line
-
-vim.g.lspconfig_silent = true
+vim.opt.cursorline = true       -- Highlight current line
 
 vim.g.vim_pack_job_threads = 50 -- Fast plugins update
-
-vim.opt.equalalways = false     -- Idk
 
 vim.opt.timeout = true          -- Timeout
 vim.opt.timeoutlen = 1000
 
-vim.opt.clipboard = "unnamedplus" -- Clipboard
+vim.opt.clipboard = "unnamedplus" -- Use system clipboard
 
 -- Indent settings
 vim.opt.showtabline = 2

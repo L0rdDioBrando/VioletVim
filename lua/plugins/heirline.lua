@@ -1,4 +1,4 @@
-vim.pack.add { "https://github.com/rebelot/heirline.nvim", "https://github.com/nvim-tree/nvim-web-devicons" }
+vim.pack.add({ "https://github.com/rebelot/heirline.nvim", "https://github.com/nvim-tree/nvim-web-devicons" })
 
 local utils = require("heirline.utils")
 local heirline = require("heirline")
@@ -197,24 +197,6 @@ local Mode = {
   },
 }
 
-local Git = {
-  condition = require("heirline.conditions").is_git_repo,
-
-  init = function(self)
-    self.status_dict = vim.b.gitsigns_status_dict
-    self.has_changes = self.status_dict.added ~= 0 or self.status_dict.changed ~= 0 or self.status_dict.removed ~= 0
-  end,
-
-  hl = { fg = colors.peach },
-
-  {
-    provider = function(self)
-      return "  " .. self.status_dict.head .. " "
-    end,
-    hl = { bold = true }
-  },
-}
-
 local Ruler = {
   {
     provider = " %P %l:%c ",
@@ -233,6 +215,24 @@ local Ruler = {
       }
     end,
   }
+}
+
+local Git = {
+  condition = require("heirline.conditions").is_git_repo,
+
+  init = function(self)
+    self.status_dict = vim.b.gitsigns_status_dict
+    self.has_changes = self.status_dict.added ~= 0 or self.status_dict.changed ~= 0 or self.status_dict.removed ~= 0
+  end,
+
+  hl = { fg = colors.peach },
+
+  {
+    provider = function(self)
+      return "  " .. self.status_dict.head .. " "
+    end,
+    hl = { bold = true }
+  },
 }
 
 local Diagnostics = {
@@ -315,8 +315,7 @@ local FileName = {
     hl = function(self)
       return {
         fg = self.mode_color,
-        bg = colors.surface0,
-        bold = true,
+        bg = colors.surface0
       }
     end,
   },

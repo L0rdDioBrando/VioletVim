@@ -1,5 +1,5 @@
 vim.schedule(function()
-  vim.pack.add { "https://github.com/saghen/blink.indent" }
+  vim.pack.add({ "https://github.com/saghen/blink.indent" })
 
   require("blink.indent").setup({
     blocked = {

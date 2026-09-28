@@ -1,10 +1,10 @@
-vim.pack.add {
+vim.pack.add({
   "https://github.com/neovim/nvim-lspconfig",
   "https://github.com/L3MON4D3/LuaSnip",
   "https://github.com/rafamadriz/friendly-snippets",
   "https://github.com/saghen/blink.cmp",
   "https://github.com/b0o/SchemaStore.nvim"
-}
+})
 
 local lspconfig = require("lspconfig")
 require("luasnip.loaders.from_vscode").lazy_load()

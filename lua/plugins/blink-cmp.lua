@@ -1,9 +1,9 @@
-vim.pack.add {
+vim.pack.add({
   "https://github.com/saghen/blink.cmp",
   "https://github.com/rafamadriz/friendly-snippets",
   "https://github.com/saghen/blink.lib",
   "https://github.com/L3MON4D3/LuaSnip"
-}
+})
 
 require("blink.cmp").setup {
   snippets = { preset = "luasnip" },
