@@ -18,7 +18,6 @@ require("plugins.treesitter")
 require("plugins.which-key")
 require("plugins.nvim-lint")
 require("plugins.surround")
-require("plugins.yazi")
 
 -- Colorsheme
 vim.cmd("colorscheme catppuccin-macchiato")

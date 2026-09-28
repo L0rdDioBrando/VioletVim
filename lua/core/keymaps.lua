@@ -24,9 +24,6 @@ vim.keymap.set("n", "<leader>ff", ":FzfLua files<cr>", { desc = "Find files" })
 vim.keymap.set("n", "<leader>fr", ":FzfLua oldfiles<cr>", { desc = "Find old files" })
 vim.keymap.set("n", "<leader>fz", ":FzfLua zoxide<cr>", { desc = "Find zoxide history" })
 
--- Yazi
-vim.keymap.set("n", "<leader>s", ":Yazi<cr>", { desc = "Open yazi" })
-
 -- Oil
 vim.keymap.set("n", "<leader>t", ":Oil<cr>", { desc = "Open oil.nvim" })
 
