@@ -56,3 +56,5 @@ vim.opt.undofile = true
 
 vim.g.loaded_netrw = 1 -- Disable netrw
 vim.g.loaded_netrwPlugin = 1
+
+vim.cmd("syntax off") -- Disable syntax
