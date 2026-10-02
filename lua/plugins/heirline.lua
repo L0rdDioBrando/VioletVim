@@ -144,12 +144,27 @@ local mode_colors = {
   i = colors.teal,
   v = colors.sky,
   V = colors.sky,
+  ["\22"] = colors.sky,
   c = colors.blue,
   t = colors.mauve,
+  R = colors.sapphire,
   r = colors.sapphire
 }
 
 local Mode = {
+  static = {
+    mode_names = {
+      n = "NORMAL",
+      i = "INSERT",
+      v = "VISUAL",
+      V = "V-LINE",
+      ["\22"] = "V-BLOCK",
+      c = "COMMAND",
+      t = "TERMINAL",
+      R = "REPLACE",
+      r = "V-REPLACE",
+    }
+  },
   {
     provider = "",
     hl = function(self)
@@ -159,8 +174,6 @@ local Mode = {
       }
     end,
   },
-
-
   {
     hl = function(self)
       return {
@@ -174,7 +187,6 @@ local Mode = {
       return " " .. (self.mode_names[self.mode] or "UNKNOWN") .. " "
     end,
   },
-
   {
     provider = "",
     hl = function(self)
@@ -183,18 +195,7 @@ local Mode = {
         bg = colors.surface0
       }
     end,
-  },
-
-  static = {
-    mode_names = {
-      n = "NORMAL",
-      i = "INSERT",
-      v = "VISUAL",
-      V = "V-LINE",
-      c = "COMMAND",
-      t = "TERMINAL",
-    }
-  },
+  }
 }
 
 local Ruler = {
@@ -219,14 +220,11 @@ local Ruler = {
 
 local Git = {
   condition = require("heirline.conditions").is_git_repo,
-
   init = function(self)
     self.status_dict = vim.b.gitsigns_status_dict
     self.has_changes = self.status_dict.added ~= 0 or self.status_dict.changed ~= 0 or self.status_dict.removed ~= 0
   end,
-
   hl = { fg = colors.peach },
-
   {
     provider = function(self)
       return "  " .. self.status_dict.head .. " "
@@ -237,21 +235,17 @@ local Git = {
 
 local Diagnostics = {
   condition = conditions.has_diagnostics,
-
   static = {
     error_icon = "  ",
     warn_icon = "  ",
     hint_icon = "  ",
   },
-
   init = function(self)
     self.errors = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.ERROR })
     self.warnings = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.WARN })
     self.hints = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.HINT })
   end,
-
   update = { "DiagnosticChanged", "BufEnter" },
-
   {
     provider = function(self)
       return self.errors > 0 and (self.error_icon .. self.errors .. "")
@@ -275,7 +269,6 @@ local Diagnostics = {
 local LSPActive = {
   condition = conditions.lsp_attached,
   update = { 'LspAttach', 'LspDetach' },
-
   provider = function()
     local names = {}
     for i, server in pairs(vim.lsp.get_clients({ bufnr = 0 })) do
