@@ -19,7 +19,7 @@ require("nvim-web-devicons").setup({
     ["LICENSE"] = {
       icon = "",
       color = colors.yellow,
-      name = "License"
+      name = "LLicense"
     },
     ["go.mod"] = {
       icon = "",
@@ -132,7 +132,12 @@ require("nvim-web-devicons").setup({
     ["tar.gz"] = {
       icon = "󰛫",
       color = colors.blue,
-      name = "Tar"
+      name = "TarGZ"
+    },
+    ["tar.xz"] = {
+      icon = "󰛫",
+      color = colors.blue,
+      name = "TarXZ"
     },
     ["cpp"] = {
       icon = "",
