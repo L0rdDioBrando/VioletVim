@@ -51,6 +51,11 @@ require("nvim-web-devicons").setup({
       color = colors.sapphire,
       name = "Flake"
     },
+    ["README.md"] = {
+      icon = "",
+      color = colors.text,
+      name = "Readme"
+    }
   },
 
   override_by_extension = {
@@ -66,12 +71,12 @@ require("nvim-web-devicons").setup({
     },
     ["txt"] = {
       icon = "",
-      color = colors.blue,
+      color = colors.text,
       name = "Txt"
     },
     ["py"] = {
       icon = "",
-      color = colors.blue,
+      color = colors.yellow,
       name = "Py"
     },
     ["js"] = {
@@ -95,18 +100,18 @@ require("nvim-web-devicons").setup({
       name = "Png"
     },
     ["jpg"] = {
-      icon = "",
-      color = colors.green,
+      icon = "",
+      color = colors.lavender,
       name = "Jpg"
     },
     ["jpeg"] = {
-      icon = "",
-      color = colors.green,
+      icon = "",
+      color = colors.lavender,
       name = "Jpeg"
     },
     ["webp"] = {
-      icon = "",
-      color = colors.green,
+      icon = "",
+      color = colors.lavender,
       name = "Webp"
     },
     ["lua"] = {
@@ -156,7 +161,7 @@ require("nvim-web-devicons").setup({
     },
     ["sh"] = {
       icon = "",
-      color = colors.overlay1,
+      color = colors.green,
       name = "Sh"
     },
     ["css"] = {
@@ -171,7 +176,7 @@ require("nvim-web-devicons").setup({
     },
     ["blend"] = {
       icon = "",
-      color = colors.yellow,
+      color = colors.peach,
       name = "Blender"
     },
     ["html"] = {
@@ -191,12 +196,12 @@ require("nvim-web-devicons").setup({
     },
     ["flac"] = {
       icon = "󰝚",
-      color = colors.lavender,
+      color = colors.teal,
       name = "Flac"
     },
     ["opus"] = {
       icon = "󰝚",
-      color = colors.green,
+      color = colors.lavender,
       name = "Opus"
     },
     ["pdf"] = {
@@ -205,8 +210,8 @@ require("nvim-web-devicons").setup({
       name = "Pdf"
     },
     ["svg"] = {
-      icon = "",
-      color = colors.maroon,
+      icon = "",
+      color = colors.lavender,
       name = "Svg"
     },
     ["avi"] = {
@@ -311,12 +316,12 @@ require("nvim-web-devicons").setup({
     },
     ["ttf"] = {
       icon = "",
-      color = colors.blue,
+      color = colors.text,
       name = "Ttf"
     },
     ["otf"] = {
       icon = "",
-      color = colors.lavender,
+      color = colors.text,
       name = "Otf"
     },
     ["md"] = {

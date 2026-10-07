@@ -8,7 +8,6 @@
 </p>
 
 ## Requirements:
-
 - [Neovim 0.12+](https://neovim.io/)
 
 - [git](https://git-scm.com/)
@@ -17,20 +16,19 @@
 
 - [clang](https://clang.llvm.org/) *or* [gcc](https://gcc.gnu.org/)
 
-- [fzf](https://github.com/junegunn/fzf)
+- [fzf](https://github.com/junegunn/fzf/)
 
-- [rg](https://github.com/burntsushi/ripgrep)
+- [rg](https://github.com/burntsushi/ripgrep/)
 
-- [zoxide](https://github.com/ajeetdsouza/zoxide)
+- [zoxide](https://github.com/ajeetdsouza/zoxide/)
 
-- [fd](https://github.com/sharkdp/fd)
+- [fd](https://github.com/sharkdp/fd/)
 
 - [Rust toolchain](https://rustup.rs/)
 
-- [Nerd Font](https://www.nerdfonts.com/) ([FiraCode](https://github.com/tonsky/firacode) in the screenshot)
+- [Nerd Font](https://www.nerdfonts.com/) ([FiraCode](https://github.com/tonsky/firacode/) in the screenshot)
 
 ## Install:
-
 Backup your config:
 
 ```bash
@@ -43,38 +41,37 @@ git clone https://github.com/L0rdDioBrando/VioletVim.git $HOME/.config/nvim
 ```
 
 ## Plugins:
-
 - Package manager: [Pack](https://neovim.io/doc/user/pack/)
 
-- Completion: [blink.cmp](https://github.com/saghen/blink.cmp)
+- Completion: [blink.cmp](https://github.com/saghen/blink.cmp/)
 
-- File manager: [oil.nvim](https://github.com/stevearc/oil.nvim)
+- File manager: [oil.nvim](https://github.com/stevearc/oil.nvim/)
 
-- Find files: [fzf-lua](https://github.com/ibhagwan/fzf-lua)
+- Find files: [fzf-lua](https://github.com/ibhagwan/fzf-lua/)
 
-- Colorscheme: [catppuccin-macchiato](https://github.com/catppuccin/nvim)
+- Colorscheme: [catppuccin-macchiato](https://github.com/catppuccin/nvim/)
 
-- Statusline & bufferline: [heirline.nvim](https://github.com/rebelot/heirline.nvim)
+- Statusline & bufferline: [heirline.nvim](https://github.com/rebelot/heirline.nvim/)
 
-- Pairs: [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- Pairs: [nvim-autopairs](https://github.com/windwp/nvim-autopairs/)
 
-- Git integration: [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- Git integration: [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim/)
 
-- Formatters, LSP & Linters: [conform.nvim](https://github.com/stevearc/conform.nvim), [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) & [nvim-lint](https://github.com/mfussenegger/nvim-lint)
+- Formatters, LSP & Linters: [conform.nvim](https://github.com/stevearc/conform.nvim/), [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/) & [nvim-lint](https://github.com/mfussenegger/nvim-lint/)
 
-- Indent: [blink.indent](https://github.com/saghen/blink.indent)
+- Indent: [blink.indent](https://github.com/saghen/blink.indent/)
 
-- Snippets: [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+- Snippets: [LuaSnip](https://github.com/L3MON4D3/LuaSnip/)
 
-- Highlighting: [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- Highlighting: [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/)
 
-- Colors highlight: [nvim-colorizer.lua](https://github.com/catgoose/nvim-colorizer.lua)
+- Colors highlight: [nvim-colorizer.lua](https://github.com/catgoose/nvim-colorizer.lua/)
 
 - Others:
-  - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
-  - [nvim-surround](https://github.com/kylechui/nvim-surround)
-## Structure:
+  - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons/)
+  - [nvim-surround](https://github.com/kylechui/nvim-surround/)
 
+## Structure:
 ```
 .
 ├── assets

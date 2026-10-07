@@ -4,6 +4,15 @@ require("colorizer").setup {
   options = {
     parsers = {
       css = true,
+      tailwind = {
+        enable = true,
+        lsp = {
+          enable = true,
+          disable_document_color = true,
+          update_names = true
+        },
+        update_names = true
+      },
     },
     xcolor = { enable = true }
   },
@@ -11,17 +20,17 @@ require("colorizer").setup {
     mode = "background",
     background = {
       bright_fg = colors.base,
-      dark_fg = colors.text,
+      dark_fg = colors.text
     },
     virtualtext = {
       char = "■",
       position = "eol",
-      hl_mode = "foreground",
+      hl_mode = "foreground"
     },
     priority = {
       default = 150,
-      lsp = 200,
+      lsp = 200
     },
-    disable_document_color = true,
+    disable_document_color = true
   }
 }

@@ -1,5 +1,5 @@
 -- General
-vim.keymap.set("n", "<C-s>", ":w!<cr>", { desc = "Save file" })
+vim.keymap.set("n", "<C-s>", ":w<cr>", { desc = "Save file" })
 vim.keymap.set("n", "<leader>u", ":lua vim.pack.update()<cr>", { desc = "Update all plugins" })
 vim.keymap.set("n", "<C-k>", ":wincmd k<cr>", { desc = "Window up" })
 vim.keymap.set("n", "<C-j>", ":wincmd j<cr>", { desc = "Window down" })

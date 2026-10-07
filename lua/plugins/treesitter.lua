@@ -9,16 +9,17 @@ require("nvim-treesitter").install {
   "nix",
   "json",
   "kdl",
+  "html",
   "css",
   "markdown",
   "markdown_inline",
-  "vim",
-  "vimdoc",
   "go",
   "bash",
-  "regex",
-  "c",
-  "python"
+  "zsh",
+  "python",
+  "yaml",
+  "toml",
+  "kitty"
 }
 
 vim.api.nvim_create_autocmd("FileType", {
@@ -28,16 +29,17 @@ vim.api.nvim_create_autocmd("FileType", {
     "json",
     "jsonc",
     "kdl",
+    "html",
     "css",
     "markdown",
     "markdown_inline",
-    "vim",
-    "vimdoc",
     "go",
-    "bash",
-    "regex",
-    "c",
-    "python"
+    "sh",
+    "zsh",
+    "python",
+    "yaml",
+    "toml",
+    "kitty"
   },
   callback = function() vim.treesitter.start() end,
 })
