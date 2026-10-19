@@ -9,6 +9,9 @@ require("blink.cmp").setup {
   snippets = { preset = "luasnip" },
   keymap = {
     ["<C-Space>"] = { "show", "show_documentation", "hide_documentation" },
+    ["<A-s>"] = { "show_signature", "hide_signature", "fallback" },
+    ["<A-k>"] = { "scroll_signature_up", "fallback" },
+    ["<A-j>"] = { "scroll_signature_down", "fallback" },
     ["<Up>"] = { "select_prev", "fallback" },
     ["<Down>"] = { "select_next", "fallback" },
     ["<C-e>"] = { "hide", "fallback" },
@@ -72,7 +75,7 @@ require("blink.cmp").setup {
     default = { "lsp", "path", "snippets", "buffer" },
   },
   fuzzy = { implementation = "prefer_rust_with_warning" },
-  signature = { enabled = false },
+  signature = { enabled = true },
 }
 
 require("blink.cmp").build()
