@@ -5,7 +5,6 @@ vim.schedule(function()
   })
 
   require("luasnip.loaders.from_vscode").lazy_load()
-
   require("luasnip").setup({
     history = true,
     delete_check_events = "TextChanged",
