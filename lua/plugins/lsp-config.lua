@@ -7,7 +7,6 @@ vim.pack.add({
 })
 
 local lspconfig = require("lspconfig")
-require("luasnip.loaders.from_vscode").lazy_load()
 local capabilities = require("blink.cmp").get_lsp_capabilities()
 
 local lsp_defaults = lspconfig.util.default_config
@@ -16,7 +15,7 @@ lsp_defaults.capabilities = vim.tbl_deep_extend("force", lsp_defaults.capabiliti
 vim.lsp.enable("gopls")
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("jsonls")
-vim.lsp.config('jsonls', {
+vim.lsp.config("jsonls", {
   settings = {
     json = {
       schemas = require('schemastore').json.schemas(),
@@ -26,7 +25,6 @@ vim.lsp.config('jsonls', {
 })
 vim.lsp.enable("cssls")
 vim.lsp.enable("nixd")
-vim.lsp.enable("kdl-ls")
 vim.lsp.enable("qmlls")
 vim.lsp.enable("bashls")
 vim.lsp.enable("basedpyright")
