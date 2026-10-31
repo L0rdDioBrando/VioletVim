@@ -20,7 +20,8 @@ require("nvim-treesitter").install {
   "yaml",
   "toml",
   "kitty",
-  "javascript"
+  "javascript",
+  "fish"
 }
 
 vim.api.nvim_create_autocmd("FileType", {
@@ -41,7 +42,8 @@ vim.api.nvim_create_autocmd("FileType", {
     "yaml",
     "toml",
     "kitty",
-    "javascript"
+    "javascript",
+    "fish"
   },
   callback = function() vim.treesitter.start() end,
 })
