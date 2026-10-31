@@ -78,4 +78,4 @@ require("blink.cmp").setup {
   signature = { enabled = true },
 }
 
-require("blink.cmp").build()
+require("blink.cmp").build = function() require('blink.cmp').build():pwait() end
