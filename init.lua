@@ -16,7 +16,10 @@ require("plugins.nvim-web-devicons")
 require("plugins.oil")
 require("plugins.treesitter")
 require("plugins.nvim-lint")
-require("plugins.surround")
+
+vim.schedule(function()
+  vim.pack.add({ "https://github.com/kylechui/nvim-surround" })
+end)
 
 -- Colorsheme
 vim.cmd("colorscheme catppuccin-macchiato")
