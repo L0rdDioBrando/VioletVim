@@ -4,7 +4,7 @@ vim.pack.add({
   "https://github.com/saghen/blink.lib",
   "https://github.com/L3MON4D3/LuaSnip"
 })
-
+require("blink.cmp").build():pwait()
 require("blink.cmp").setup {
   snippets = { preset = "luasnip" },
   keymap = {
@@ -77,5 +77,3 @@ require("blink.cmp").setup {
   fuzzy = { implementation = "prefer_rust_with_warning" },
   signature = { enabled = true },
 }
-
-require("blink.cmp").build = function() require('blink.cmp').build():pwait() end
