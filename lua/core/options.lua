@@ -63,9 +63,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
   end,
 })
 
-vim.opt.undofile = true
+vim.opt.undofile = true -- Enable undo/redo changes even after closing and reopening a file
 
-vim.g.loaded_netrw = 1 -- Disable netrw
+vim.g.loaded_netrw = 1  -- Disable netrw
 vim.g.loaded_netrwPlugin = 1
-
-vim.cmd("syntax off") -- Disable syntax
