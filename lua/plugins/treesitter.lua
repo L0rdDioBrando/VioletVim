@@ -8,6 +8,7 @@ require("nvim-treesitter").install {
   "lua",
   "nix",
   "json",
+  "yaml",
   "kdl",
   "html",
   "css",
@@ -17,11 +18,16 @@ require("nvim-treesitter").install {
   "bash",
   "zsh",
   "python",
-  "yaml",
   "toml",
   "kitty",
   "javascript",
   "fish"
+}
+
+vim.filetype.add {
+  filename = {
+    ["kitty.conf"] = "kitty"
+  }
 }
 
 vim.api.nvim_create_autocmd("FileType", {
@@ -30,6 +36,7 @@ vim.api.nvim_create_autocmd("FileType", {
     "nix",
     "json",
     "jsonc",
+    "yaml",
     "kdl",
     "html",
     "css",
@@ -39,7 +46,6 @@ vim.api.nvim_create_autocmd("FileType", {
     "sh",
     "zsh",
     "python",
-    "yaml",
     "toml",
     "kitty",
     "javascript",
