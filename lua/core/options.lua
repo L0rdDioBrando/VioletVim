@@ -15,8 +15,8 @@ vim.loader.enable()        -- Fast start
 vim.opt.ignorecase = true  -- Ignores case during search
 vim.opt.smartcase = true
 
-vim.opt.number = true -- Make line numbers default
-vim.opt.relativenumber = true
+vim.opt.number = true             -- Make line numbers default
+vim.opt.relativenumber = true     -- Show the line number relative to the line with the cursor in front of each line
 
 vim.opt.cursorline = true         -- Highlight current line
 
