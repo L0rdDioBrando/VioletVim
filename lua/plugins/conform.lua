@@ -12,6 +12,7 @@ require("conform").setup({
     jsonc = { "jq" },
     kdl = { "kdlfmt" },
     bash = { "shfmt" },
+    fish = { "fish_indent" },
     markdown = { "markdownfmt" }
   },
   format_on_save = {
