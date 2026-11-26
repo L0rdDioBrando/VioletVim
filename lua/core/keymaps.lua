@@ -6,6 +6,10 @@ vim.keymap.set("n", "<C-j>", ":wincmd j<cr>", { desc = "Window down" })
 vim.keymap.set('n', "<C-h>", ":wincmd h<cr>", { desc = "Windoww left" })
 vim.keymap.set('n', "<C-l>", ":wincmd l<cr>", { desc = "Window right" })
 vim.keymap.set("n", "<A-a>", "ggVG", { desc = "Select all" })
+vim.keymap.set("n", "<C-q>", function()
+  local mc_ns = vim.api.nvim_create_namespace('nvim.multicursor')
+  vim.api.nvim_buf_clear_namespace(0, mc_ns, 0, -1)
+end, { desc = "Clean all multicursors" })
 vim.keymap.set("n", "T", ":terminal<cr>", { desc = "Open terminal" })
 
 -- Buffers
