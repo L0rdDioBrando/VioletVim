@@ -36,7 +36,22 @@ vim.g.clipboard = {
     ["+"] = require("vim.ui.clipboard.osc52").paste("+"),
     ["*"] = require("vim.ui.clipboard.osc52").paste("*"),
   },
-}                             -- Fix clipboard in SSH
+} -- Fix clipboard in SSH
+
+vim.diagnostic.config({
+  virtual_text = {
+    spacing = 2,
+    prefix = "●",
+  },
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = true,
+  float = {
+    border = "rounded",
+    source = "if_many",
+  },
+})
 
 vim.opt.showtabline = 2       -- The tabpage labels will always be displayed
 vim.opt.tabstop = 2           -- Tab width
