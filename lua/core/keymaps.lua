@@ -37,6 +37,7 @@ end, { desc = "Find keymaps" })
 vim.keymap.set("n", "<leader>t", ":Oil<cr>", { desc = "Open oil.nvim" })
 
 -- Gitsigns
-vim.keymap.set("n", "<leader>gl", "&diff ? 'gl' : ':Gitsigns next_hunk<cr>'", { expr = true, desc = "Next git hunk" })
-vim.keymap.set("n", "<leader>gg", "&diff ? 'gh' : ':Gitsigns prev_hunk<cr>'", { expr = true, desc = "Prev git hunk" })
+vim.keymap.set("n", "<leader>gl", "&diff ? 'gh' : ':Gitsigns next_hunk<cr>'", { expr = true, desc = "Next git hunk" })
+vim.keymap.set("n", "<leader>gh", "&diff ? 'gh' : ':Gitsigns prev_hunk<cr>'", { expr = true, desc = "Prev git hunk" })
+vim.keymap.set("n", "<leader>gs", "&diff ? 'gh' : ':Gitsigns select_hunk<cr>'", { expr = true, desc = "Select git hunk" })
 vim.keymap.set("n", "<leader>gu", ":Gitsigns undo_stage_hunk<cr>", { desc = "Undo stage hunk" })
