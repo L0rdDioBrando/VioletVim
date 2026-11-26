@@ -1,7 +1,7 @@
 -- Plugins
 require("core.options")
-require("core.colors")
 require("core.keymaps")
+require("plugins.catppuccin")
 require("plugins.heirline")
 require("plugins.conform")
 require("plugins.blink-cmp")
