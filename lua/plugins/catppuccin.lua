@@ -1,5 +1,6 @@
 vim.pack.add({ { src = "https://github.com/catppuccin/nvim", name = "catppuccin", priority = 1000, } })
 _G.colors = require("catppuccin.palettes").get_palette("macchiato")
+
 require("catppuccin").setup({
   flavour = "macchiato", -- latte, frappe, macchiato, mocha
   custom_highlights = {
