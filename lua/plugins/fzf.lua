@@ -16,17 +16,17 @@ require("fzf-lua").setup {
   fzf_opts = {
     ["--color"] = table.concat({
       "fg:" .. colors.text,
-      "bg:" .. colors.base,
-      "hl:" .. colors.red,
       "fg+:" .. colors.lavender,
+      "bg:" .. colors.base,
       "bg+:" .. colors.surface0,
+      "hl:" .. colors.red,
       "hl+:" .. colors.red,
-      "info:" .. colors.teal,
+      "info:" .. colors.lavender,
       "prompt:" .. colors.lavender,
-      "pointer:" .. colors.rosewater,
-      "marker:" .. colors.rosewater,
-      "spinner:" .. colors.rosewater,
-      "header:" .. colors.red
+      "pointer:" .. colors.lavender,
+      "marker:" .. colors.mauve,
+      "spinner:" .. colors.mauve,
+      "header:" .. colors.overlay0
     }, ","),
   },
   hls = {
