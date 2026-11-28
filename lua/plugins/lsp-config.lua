@@ -24,6 +24,13 @@ vim.lsp.config("jsonls", {
   },
 })
 vim.lsp.enable("cssls")
+vim.lsp.config("cssls", {
+  settings = {
+    css = {
+      validate = false
+    }
+  }
+})
 vim.lsp.enable("nixd")
 vim.lsp.enable("qmlls")
 vim.lsp.enable("bashls")
