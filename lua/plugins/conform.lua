@@ -4,13 +4,10 @@ require("conform").setup({
   formatters_by_ft = {
     lua = { "stylua" },
     go = { "goimports", "gofmt" },
-    python = { "isort", "black" },
-    nix = { "nixpkgs-fmt" },
-    rust = { "rustfmt", lsp_format = "fallback" },
-    javascript = { "prettierd", "prettier", stop_after_first = true },
+    python = { "isort" },
+    nix = { "nix-fmt" },
     json = { "jq" },
     jsonc = { "jq" },
-    kdl = { "kdlfmt" },
     bash = { "shfmt" },
     fish = { "fish_indent" },
     markdown = { "markdownfmt" }
