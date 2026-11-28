@@ -1,9 +1,10 @@
 -- General
 vim.keymap.set("n", "<C-s>", ":w<cr>", { desc = "Save file" })
+vim.keymap.set("n", "<C-w>", ":noau w<cr>", { desc = "Save file without formatter" })
 vim.keymap.set("n", "<leader>u", ":lua vim.pack.update()<cr>", { desc = "Update all plugins" })
 vim.keymap.set("n", "<C-k>", ":wincmd k<cr>", { desc = "Window up" })
 vim.keymap.set("n", "<C-j>", ":wincmd j<cr>", { desc = "Window down" })
-vim.keymap.set('n', "<C-h>", ":wincmd h<cr>", { desc = "Windoww left" })
+vim.keymap.set('n', "<C-h>", ":wincmd h<cr>", { desc = "Window left" })
 vim.keymap.set('n', "<C-l>", ":wincmd l<cr>", { desc = "Window right" })
 vim.keymap.set("n", "<A-a>", "ggVG", { desc = "Select all" })
 vim.keymap.set("n", "<C-q>", function()
@@ -11,6 +12,9 @@ vim.keymap.set("n", "<C-q>", function()
   vim.api.nvim_buf_clear_namespace(0, mc_ns, 0, -1)
 end, { desc = "Clean all multicursors" })
 vim.keymap.set("n", "T", ":terminal<cr>", { desc = "Open terminal" })
+
+-- GrugFar
+vim.keymap.set("n", "<leader>r", ":GrugFar<cr>", { desc = "Open replace window" })
 
 -- Buffers
 vim.keymap.set("n", "<leader>bb", ":bd<cr>", { desc = "Close active buffer" })

@@ -14,11 +14,14 @@ vim.pack.add({ "https://github.com/lewis6991/gitsigns.nvim" })
 
 vim.schedule(function()
   require("plugins.autopairs")
+  require("plugins.nvim-lint")
   require("plugins.blink-indent")
   require("plugins.colorizer")
   require("plugins.luasnip")
-  require("plugins.nvim-lint")
-  vim.pack.add({ "https://github.com/kylechui/nvim-surround" })
+  vim.pack.add({
+    "https://github.com/kylechui/nvim-surround",
+    "https://github.com/MagicDuck/grug-far.nvim"
+  })
 end)
 
 -- Colorsheme
